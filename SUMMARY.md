@@ -28,7 +28,8 @@
 
 ## Drone Show Technology
 
-* [Networking](drone-show-technology/networking.md)
+* [Networking](drone-show-technology/networking/README.md)
+  * [802.15.4](drone-show-technology/networking/802.15.4.md)
 * [Autopilot](drone-show-technology/autopilot/README.md)
   * [PX4](drone-show-technology/autopilot/px4.md)
 * [GPS/GNSS](drone-show-technology/gps-gnss/README.md)
