@@ -28,6 +28,7 @@
 
 ## Drone Show Technology
 
+* [Safety](drone-show-technology/safety.md)
 * [Networking](drone-show-technology/networking.md)
   * [802.15.4](drone-show-technology/networking/802.15.4.md)
 * [Autopilot](drone-show-technology/autopilot/README.md)
