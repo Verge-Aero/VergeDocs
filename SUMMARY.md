@@ -1,17 +1,33 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [Verge Aero - Drone Show Technology](README.md)
 
-## Getting Started
+## Drone Show Software
 
-* [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
+* [Verge Web Portal](drone-show-software/verge-web-portal/README.md)
+  * [Verge Aero Account](drone-show-software/verge-web-portal/verge-aero-account.md)
+* [Verge App Toolbox](drone-show-software/quickstart.md)
+* [Verge Design Studio](drone-show-software/publish-your-docs/README.md)
+  * [Show Effects](drone-show-software/publish-your-docs/show-effects/README.md)
+    * [Show Effect Asset Repository](drone-show-software/publish-your-docs/show-effects/show-effect-asset-repository.md)
+    * [Converting Scene Objects into Show Effects](drone-show-software/publish-your-docs/show-effects/converting-scene-objects-into-show-effects.md)
+  * [Composer](drone-show-software/publish-your-docs/composer.md)
+* [Verge Console](drone-show-software/verge-console/README.md)
+  * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
 
-## Basics
+## Drone Show Hardware
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Networking](drone-show-hardware/networking/README.md)
+  * [LoRa Gateway](drone-show-hardware/networking/lora-gateway.md)
+  * [AT86 Gateway](drone-show-hardware/networking/at86-gateway.md)
+* [Drones](drone-show-hardware/drones/README.md)
+  * [X1](drone-show-hardware/drones/x1.md)
+  * [X7](drone-show-hardware/drones/x7.md)
+
+## Drone Show Technology
+
+* [Autopilot](drone-show-technology/autopilot/README.md)
+  * [PX4](drone-show-technology/autopilot/px4.md)
+* [GPS](drone-show-technology/gps/README.md)
+  * [RTK GPS](drone-show-technology/gps/rtk-gps.md)
+  * [RTCM](drone-show-technology/gps/rtcm.md)

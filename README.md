@@ -17,12 +17,13 @@ layout:
     visible: true
 ---
 
-# Welcome
+# Verge Aero - Drone Show Technology
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+### Verge Aero
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+* [About Us](https://www.verge.aero/about)
+* [Team Verge](https://wiki.droneshow.software/wiki/Team\_Verge)
 
-### Jump right in
+### Learn About the Software
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td><a href=".gitbook/assets/1.png">1.png</a></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td><a href=".gitbook/assets/2.png">2.png</a></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td><a href=".gitbook/assets/3.png">3.png</a></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Verge App Toolbox</strong></td><td>Access the Verge Software Suite</td><td><a href=".gitbook/assets/1.png">1.png</a></td><td></td><td><a href="drone-show-software/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Verge Design Studio</strong></td><td>Design drone shows</td><td><a href=".gitbook/assets/2.png">2.png</a></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Verge Console</strong></td><td>Fly drone shows</td><td><a href=".gitbook/assets/3.png">3.png</a></td><td></td><td><a href="drone-show-software/publish-your-docs/">publish-your-docs</a></td></tr><tr><td></td><td>Verge Web Portal</td><td></td><td></td><td><a href="drone-show-software/verge-web-portal/">verge-web-portal</a></td></tr></tbody></table>
