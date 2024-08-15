@@ -11,6 +11,8 @@
   * [Show Effects](drone-show-software/publish-your-docs/show-effects/README.md)
     * [Show Effect Asset Repository](drone-show-software/publish-your-docs/show-effects/show-effect-asset-repository.md)
     * [Converting Scene Objects into Show Effects](drone-show-software/publish-your-docs/show-effects/converting-scene-objects-into-show-effects.md)
+    * [Show Effect Sequences](drone-show-software/publish-your-docs/show-effects/show-effect-sequences.md)
+    * [Show Effect States](drone-show-software/publish-your-docs/show-effects/show-effect-states.md)
   * [Composer](drone-show-software/publish-your-docs/composer.md)
   * [Animation Editor](drone-show-software/publish-your-docs/animation-editor.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
