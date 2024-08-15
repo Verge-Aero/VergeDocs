@@ -2,7 +2,7 @@
 
 ### What is an Autopilot?
 
-In the simplest terms, an autopilot is a software package that is responsible for taking in a bunch of data about a robot's position/rotation in space and ultimately outputting signals to its motors to move through that space. Most autopilots are not limited to quadrotors. They can support other air-based devices (such as fixed-wing aircraft, helicopters, and blimbs) and even ground or water vehicles like rovers, boats, and submarines.
+In the simplest terms, an autopilot is a software package that is responsible for taking in a bunch of data about a robot's position/rotation in space and ultimately outputting signals to its motors to move through that space. Most autopilots are not limited to quadrotors. They can support other air-based devices (such as fixed-wing aircraft, helicopters, and blimps) and even ground or water vehicles like rovers, boats, and submarines.
 
 ### Popular Autopilots
 
