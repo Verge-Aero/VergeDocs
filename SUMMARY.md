@@ -15,6 +15,7 @@
   * [Animation Editor](drone-show-software/publish-your-docs/animation-editor.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
+* [Maestro Server](drone-show-software/maestro-server.md)
 
 ## Drone Show Hardware
 
