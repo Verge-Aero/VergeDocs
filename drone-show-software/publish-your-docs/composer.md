@@ -1,6 +1,6 @@
 # Composer
 
-The [Verge Aero](https://wiki.droneshow.software/wiki/Verge\_Aero) Composer is a special mode in the [Verge Design Studio](./) that further simplifies the process of creating drone shows. It is designed to be accessible to designers of all skill levels, and requires no prior knowledge or experience with 3D design tools. [Show Effects](show-effects/), the primary building blocks of the Composer, can be drag-and-dropped into the Composer timeline to create unique shows in minutes. As a trade-off for its simplified and expedited show creation process, effect customization in the Composer is significantly more limited than in the [Verge Design Studio](./).
+The [Verge Aero](../../) Composer is a special mode in the [Verge Design Studio](./) that further simplifies the process of creating drone shows. It is designed to be accessible to designers of all skill levels, and requires no prior knowledge or experience with 3D design tools. [Show Effects](show-effects/), the primary building blocks of the Composer, can be drag-and-dropped into the Composer timeline to create unique shows in minutes. As a trade-off for its simplified and expedited show creation process, effect customization in the Composer is significantly more limited than in the [Verge Design Studio](./).
 
 <figure><img src="../../.gitbook/assets/1199px-Composer_Overview.png" alt=""><figcaption><p>A Composer design comprising of two Show Effects and one audio track</p></figcaption></figure>
 
@@ -8,7 +8,7 @@ The [Verge Aero](https://wiki.droneshow.software/wiki/Verge\_Aero) Composer is a
 
 
 
-The Composer comprises of four panels: Assets, Timeline, Inspector and Preview. Show elements (such as [Show Effects](https://wiki.droneshow.software/wiki/Show\_Effects)) are dragged from the Assets panel into the Timeline panel. Selecting an element in the Timeline panel will display additional customization options in the Inspector panel. The Preview panel updates in real time to reflect any changes to the show design.
+The Composer comprises of four panels: Assets, Timeline, Inspector and Preview. Show elements (such as [Show Effects](show-effects/)) are dragged from the Assets panel into the Timeline panel. Selecting an element in the Timeline panel will display additional customization options in the Inspector panel. The Preview panel updates in real time to reflect any changes to the show design.
 
 <figure><img src="../../.gitbook/assets/Composer_Panels.png" alt=""><figcaption><p>The four panels of the Composer: Assets, Timeline, Inspector, and Preview</p></figcaption></figure>
 

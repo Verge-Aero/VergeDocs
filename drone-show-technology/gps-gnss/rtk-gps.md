@@ -1,6 +1,6 @@
 # RTK GPS
 
-Real-time kinematic positioning (RTK) is an enhancement to standard [GNSS](https://wiki.droneshow.software/index.php?title=GNSS\&action=edit\&redlink=1) that provides realtime corrections for errors in GPS signals. A standard RTK setup consists of a fixed, unmoving base station which collects and resolves GPS errors. It then embeds the corrections inside of a data packet, such as [RTCM](https://wiki.droneshow.software/wiki/RTCM), and is transmitted to a rover which can move freely, such as a drone. Standard GPS 3D-Fix resolves to an accuracy of around 3 meters while a proper RTK setup will provide accuracy down to 1-2 centimeters. This is the core technology that allows outdoor drone shows to maintain their precision and tight formations.
+Real-time kinematic positioning (RTK) is an enhancement to standard [GNSS](https://wiki.droneshow.software/index.php?title=GNSS\&action=edit\&redlink=1) that provides realtime corrections for errors in GPS signals. A standard RTK setup consists of a fixed, unmoving base station which collects and resolves GPS errors. It then embeds the corrections inside of a data packet, such as [RTCM](rtcm.md), and is transmitted to a rover which can move freely, such as a drone. Standard GPS 3D-Fix resolves to an accuracy of around 3 meters while a proper RTK setup will provide accuracy down to 1-2 centimeters. This is the core technology that allows outdoor drone shows to maintain their precision and tight formations.
 
 ### RTK Modes
 

@@ -10,5 +10,5 @@ Show effects provide a convenient way to package complex scene object hierarchie
 
 ### Learn How to Use Show Effects
 
-* [Show Effect Asset Repository](https://wiki.droneshow.software/wiki/Show\_Effect\_Asset\_Repository)
-* [Converting Scene Objects into Show Effects](https://wiki.droneshow.software/wiki/Converting\_Scene\_Objects\_into\_Show\_Effects)
+* [Show Effect Asset Repository](show-effect-asset-repository.md)
+* [Converting Scene Objects into Show Effects](converting-scene-objects-into-show-effects.md)

@@ -12,6 +12,7 @@
     * [Show Effect Asset Repository](drone-show-software/publish-your-docs/show-effects/show-effect-asset-repository.md)
     * [Converting Scene Objects into Show Effects](drone-show-software/publish-your-docs/show-effects/converting-scene-objects-into-show-effects.md)
   * [Composer](drone-show-software/publish-your-docs/composer.md)
+  * [Animation Editor](drone-show-software/publish-your-docs/animation-editor.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
 
@@ -26,8 +27,9 @@
 
 ## Drone Show Technology
 
+* [Networking](drone-show-technology/networking.md)
 * [Autopilot](drone-show-technology/autopilot/README.md)
   * [PX4](drone-show-technology/autopilot/px4.md)
-* [GPS](drone-show-technology/gps/README.md)
-  * [RTK GPS](drone-show-technology/gps/rtk-gps.md)
-  * [RTCM](drone-show-technology/gps/rtcm.md)
+* [GPS/GNSS](drone-show-technology/gps-gnss/README.md)
+  * [RTK GPS](drone-show-technology/gps-gnss/rtk-gps.md)
+  * [RTCM](drone-show-technology/gps-gnss/rtcm.md)
