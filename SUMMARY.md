@@ -17,6 +17,7 @@
   * [Composer](drone-show-software/publish-your-docs/composer.md)
   * [Animation Editor](drone-show-software/publish-your-docs/animation-editor.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
+  * [Slotting - Assigning Drones](drone-show-software/verge-console/slotting-assigning-drones.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
 * [Maestro Server](drone-show-software/maestro-server.md)
 
