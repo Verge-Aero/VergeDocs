@@ -72,7 +72,7 @@ After a show is designed, it must be simulated to generate flyable paths. The de
 
 <figure><img src="../.gitbook/assets/SVG_Emoji_Rendered_Comparison.png" alt=""><figcaption><p>The right shape displays drone behavior when too many drones are placed in a small space. The software keeps drones apart so that they do not collide while representing the shape as closely as possible.</p></figcaption></figure>
 
-### The Command Center
+## The Command Center
 
 Once a show is designed, then the focus turns to performing a drone show. Besides the drones themselves, all that's needed for configuring a drone show is a laptop and some custom base station hardware. Verge Aero's base station consists of two [radios](../drone-show-hardware/networking/), an [RTK](gps-gnss/rtk-gps.md) base, and a battery backup. Rather than using an off-the-shelf solution, such as wi-fi (802.11), the Verge system uses a custom solution that supports thousands of drones over a single antenna. The laptop runs an application called the [Verge Console](../drone-show-software/verge-console/) that is responsible for managing, configuring, and executing the drone show.
 
