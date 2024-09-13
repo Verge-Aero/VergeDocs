@@ -9,7 +9,7 @@
   * [Creating and submitting Flight Authorizations](drone-show-software/verge-web-portal/creating-and-submitting-flight-authorizations.md)
   * [Creating and rendering Shows](drone-show-software/verge-web-portal/creating-and-rendering-shows.md)
   * [Managing User's Desktop Permissions](drone-show-software/verge-web-portal/managing-users-desktop-permissions.md)
-  * [Session Log Analysis](drone-show-software/verge-web-portal/session-log-analysis.md)
+  * [Performance Summaries & Session Log Analysis](drone-show-software/verge-web-portal/performance-summaries-and-session-log-analysis.md)
   * [Managing License Activations](drone-show-software/verge-web-portal/managing-license-activations.md)
 * [Verge App Toolbox](drone-show-software/quickstart/README.md)
   * [Offline Mode](drone-show-software/quickstart/offline-mode.md)

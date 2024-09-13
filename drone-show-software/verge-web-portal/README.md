@@ -9,6 +9,6 @@
 * Administrate their [user's desktop & organization](managing-users-desktop-permissions.md) permissions
 * Manage [product key activations](managing-license-activations.md)
 
-and more! Users can register new accounts on the registration [page](https://aeroportal.droneshow.software/register).
+and more! Users can register new accounts on the registration [page](https://aeroportal.droneshow.software/register). If you have not been added to your relevant organization reach out to your organization's managers or [support@vergeaero.com](mailto:support@vergeaero.com)
 
 <figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption><p>Login page for the Verge Web Portal</p></figcaption></figure>
