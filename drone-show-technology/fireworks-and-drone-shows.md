@@ -30,7 +30,7 @@ Drones have bright RGBW LEDs attached them that support fine-tuned intensity and
 
 This probably goes without saying, but drones do not emit smoke. If they do, then there's something wrong. Pyro, on the other hand, has the potential to produce large amounts of smoke, a reality that is factored into show planning. The smoke produced by pyro actually provides an _excellent_ backdrop to drone light shows. The particulates in the air causes light to be bounced around and makes it appear to "bloom" in beautiful ways.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Weather
 
