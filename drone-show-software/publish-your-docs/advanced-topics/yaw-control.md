@@ -31,4 +31,4 @@ There are multiple event types that provide flexible ways of turning drones.
 
 All Payload Target events also handle transitions by spending the first x% of the event easing into the new rotation. The percentage as well as the easing method is configurable.
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt="" width="278"><figcaption></figcaption></figure>

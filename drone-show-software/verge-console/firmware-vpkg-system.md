@@ -35,7 +35,11 @@ The update process operates as follows:
 
 Figure 3.1: Shows the inspector panel for an X7 drone with fields for hivemind (CC) and autopilot firmware hashes
 
-<figure><img src="../../.gitbook/assets/unnamed.png" alt=""><figcaption><p>Shows a device grid error stating that the autopilot firmware does not match the loaded package’s firmware</p></figcaption></figure>
+<div align="center" data-full-width="false">
+
+<figure><img src="../../.gitbook/assets/unnamed.png" alt="" width="98"><figcaption><p>Shows a device grid error stating <br>that the autopilot firmware <br>does not match the loaded package’s firmware</p></figcaption></figure>
+
+</div>
 
 #### Managing [Autopilot](../../drone-show-technology/autopilot/) Parameters
 
@@ -47,7 +51,7 @@ Figure 4.1: Shows a device grid error stating that the parameter hash does not m
 
 The Maestro server runs a standardized, unchanging linux distribution. Software is deployed and executed via transferred applications. When connecting to the maestro server, the Verge Aero Console checks the versions of the applications that are currently running. If they diverge, the Console alerts the user that it is out of date. The Console can then upload the version present in the VPKG and reboot the Maestro server to apply changes.
 
-<figure><img src="../../.gitbook/assets/unnamed (2).png" alt=""><figcaption><p>Shows the case where the Maestro version does not match the expected value in the VPKG file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/unnamed (2).png" alt="" width="233"><figcaption><p>Shows the case where the Maestro version does not match the expected value in the VPKG file</p></figcaption></figure>
 
 #### [AT86](../../drone-show-hardware/networking/at86-gateway.md)/[LoRa](../../drone-show-hardware/networking/lora-gateway.md) Gateways
 
