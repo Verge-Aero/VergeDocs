@@ -29,6 +29,7 @@
   * [Advanced Topics](drone-show-software/publish-your-docs/advanced-topics/README.md)
     * [Using Multiple Launchpads](drone-show-software/publish-your-docs/advanced-topics/using-multiple-launchpads.md)
     * [Yaw Control](drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+  * [VVIZ Format](drone-show-software/publish-your-docs/vviz-format.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
   * [Slotting - Assigning Drones](drone-show-software/verge-console/slotting-assigning-drones.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)

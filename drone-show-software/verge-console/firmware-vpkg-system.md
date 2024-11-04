@@ -6,11 +6,45 @@ During typical operation, Verge Aero’s drone show system consists of hundreds 
 
 A VPKG is a single file that contains a manifest and packages every binary necessary to update components of the system. By using a single file, human error is minimized and we can ensure that the system state as a whole is always valid. Each VPKG is assigned a single version ID which also simplifies the confusion of differing version numbers and formats across the system. Each entry contains a version number, an MD5 hash for error checking, a component tag, and a name. This file cannot be modified by the user and is provided by Verge Aero on a stable release schedule. Each version of the [Verge Aero Console](./) is shipped with a VPKG embedded to support offline software synchronization. The VPKG format also supports hardware variants by allowing multiple architectures to be represented simultaneously, identified via special tags. For example, AP\_ORANGE\_FW represents an [X1 ](../../drone-show-hardware/drones/x1.md)drone that is running a Cube Orange autopilot hardware module and AP\_X7\_V1\_FW represents an [X7](../../drone-show-hardware/drones/x7.md) running version 1 of its autopilot hardware. This means that a mixed fleet of any number of hardware variations can all be managed and updated simultaneously.
 
-| VPK Metadata                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p>BundleMetadata:</p><p> FileName: x7_dev-v1_2_2_2</p><p> Label: v1.2.2.2</p><p> Version: 1.2.2.2</p><p> Tags:</p><p> Changelog:</p><p> Path:</p><p> Hash:</p><p> MD5:</p><p>PackageContents:</p><p> AP_X7_V1_FW:</p><p>   FileName: x2_fc-v1.2.2.2.bin</p><p>   Label:</p><p>   Version: 1.2.2.2</p><p>   Tags:</p><p>   Changelog:</p><p>   Path: Target/Autopilot/Firmware</p><p>   Hash: 518e4d59ee000000</p><p>   MD5: 6b43ad0db95fe64f006897ed2195034b</p><p> HM_X7_V1_FW:</p><p>   FileName: x2_drone-v1.2.2.2.bin</p><p>   Label:</p><p>   Version: 1.2.2.2</p><p>   Tags:</p><p>   Changelog:</p><p>   Path: Target/Hivemind/Firmware</p><p>   Hash: a10894b3c349afef</p><p>   MD5: dffcdab626b4f2aad117f588ba5f2a22</p><p> RPI3B_MAESTROSERVER:</p><p>   FileName: maestroserver-1.2.1.8</p><p>   Label:</p><p>   Version: 1.2.1.8</p><p>   Tags:</p><p>   Changelog:</p><p>   Path: Target/Maestro/MaestroServer</p><p>   Hash:</p><p>   MD5: 02099e8fb749b9d86679b3a82739cab0</p> |
-
-Table 1: Shows an example bundle manifest with an AP build, HM build, and Maestro Server application included
+```
+BundleMetadata:
+ FileName: x7_dev-v1_2_2_2
+ Label: v1.2.2.2
+ Version: 1.2.2.2
+ Tags:
+ Changelog:
+ Path:
+ Hash:
+ MD5:
+PackageContents:
+ AP_X7_V1_FW:
+   FileName: x2_fc-v1.2.2.2.bin
+   Label:
+   Version: 1.2.2.2
+   Tags:
+   Changelog:
+   Path: Target/Autopilot/Firmware
+   Hash: 518e4d59ee000000
+   MD5: 6b43ad0db95fe64f006897ed2195034b
+ HM_X7_V1_FW:
+   FileName: x2_drone-v1.2.2.2.bin
+   Label:
+   Version: 1.2.2.2
+   Tags:
+   Changelog:
+   Path: Target/Hivemind/Firmware
+   Hash: a10894b3c349afef
+   MD5: dffcdab626b4f2aad117f588ba5f2a22
+ RPI3B_MAESTROSERVER:
+   FileName: maestroserver-1.2.1.8
+   Label:
+   Version: 1.2.1.8
+   Tags:
+   Changelog:
+   Path: Target/Maestro/MaestroServer
+   Hash:
+   MD5: 02099e8fb749b9d86679b3a82739cab0
+```
 
 ### Updating from the Console
 

@@ -1,4 +1,4 @@
-# Show Effect Asset Repository
+# Show Effect: Asset Repository
 
 Verge Aero’s design studio has a built-in, cloud-enabled solution for managing and sharing drone show effects within an organization. The asset repo also supports versioning which ensures that shows designed in the past are not accidentally impacted when publishing updates to existing effects.
 
@@ -46,9 +46,9 @@ After creating a new effect, or [converting an existing scene object](converting
 
 To create a new version of an existing show effect, you must first unpack the show effect. Unpacking can be done by selecting a show effect, navigating to the inspector, and clicking the "Unpack" button. Once unpacked, you may freely modify the show effect. To upload modifications, follow the same steps as would be performed when publishing a new effect. The publish panel will look slightly different; you will be unable to modify the effect name, author name, or owner. Click "Submit" to upload the new version.
 
-**Note on Asset Versioning**
-
+{% hint style="info" %}
 The new version will take the place of the previous version in the asset browser. Any saved show will save a reference to the show effect _and_ the version of that effect that was used. This way, if you update the show effect, it will not have any impact on previously designed shows.&#x20;
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Publish_Popcorn.png" alt="" width="297"><figcaption><p>The publish panel for a new version of a "Popcorn" show effect</p></figcaption></figure>
 
