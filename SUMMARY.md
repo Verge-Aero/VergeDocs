@@ -48,6 +48,7 @@
 
 * [How Drone Shows Work - An Overview](drone-show-technology/how-drone-shows-work-an-overview.md)
 * [Fireworks And Drone Shows](drone-show-technology/fireworks-and-drone-shows.md)
+* [The Creative Capabilities of a Drone Show and How to Work With One](drone-show-technology/the-creative-capabilities-of-a-drone-show-and-how-to-work-with-one.md)
 * [Safety](drone-show-technology/safety.md)
 * [Networking](drone-show-technology/networking.md)
   * [802.15.4](drone-show-technology/networking/802.15.4.md)
