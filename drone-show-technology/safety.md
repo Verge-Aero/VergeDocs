@@ -49,7 +49,7 @@ Any test failure rejects export. The user may not generate a flyable mission fil
 
 ### Verge Aero Cloud Services Validation
 
-After a show is exported from the [design studio](https://wiki.droneshow.software/wiki/Verge\_Design\_Studio), it must be uploaded to Verge Aero’s web portal. This web portal is responsible for conducting additional automatic checks and, crucially, allows Verge Aero to have oversight regarding where users are seeking to execute shows. Geofences are checked against airspace classifications and, in the case that the show is planned in any controlled airspace, Verge Aero personnel verify that the user has obtained proper clearance before allowing missions to be generated. This ensures that Verge Aero drones will never fly in unauthorized locations. Once approved and validated, a show file is generated that can be used to execute a mission.
+After a show is exported from the [design studio](https://wiki.droneshow.software/wiki/Verge_Design_Studio), it must be uploaded to Verge Aero’s web portal. This web portal is responsible for conducting additional automatic checks and, crucially, allows Verge Aero to have oversight regarding where users are seeking to execute shows. Geofences are checked against airspace classifications and, in the case that the show is planned in any controlled airspace, Verge Aero personnel verify that the user has obtained proper clearance before allowing missions to be generated. This ensures that Verge Aero drones will never fly in unauthorized locations. Once approved and validated, a show file is generated that can be used to execute a mission.
 
 ### Verge Aero Console Input Validation
 
@@ -151,8 +151,8 @@ Once launched, there are redundant automatic and manual systems for detecting an
 1. FMU - Flight Management Unit
 2. CC - Companion Computer
 3. FTS - Flight Termination System
-4. [LoRa](../drone-show-hardware/networking/lora-gateway.md) - Very low bandwidth, “Long Range” radio. Sub-Ghz frequency
-5. [AT86](../drone-show-hardware/networking/at86-gateway.md) - IEEE 802.15.4 radio with bands in 2.4 Ghz and Sub-Ghz
+4. LoRa - Very low bandwidth, “Long Range” radio. Sub-Ghz frequency
+5. AT86 - IEEE 802.15.4 radio with bands in 2.4 Ghz and Sub-Ghz
 6. [PX4](autopilot/px4.md) - An open source autopilot stack
 
 ### FTS Description
