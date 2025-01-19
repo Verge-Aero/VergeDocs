@@ -50,7 +50,7 @@ PackageContents:
 
 Synchronizing the system to a VPKG is incredibly simple from a user-perspective. The user must ensure that the proper bundle version is loaded into the “Software Bundles” panel, press the “Upload” button, and then verify that they wish to start the upload process. After that, the system automatically handles all necessary update actions. It is still important that the user maintain vigilance and look for inconsistencies.
 
-Figure 2.1: Shows the software bundle panel within the [Verge Aero Console](https://wiki.droneshow.software/wiki/Verge\_Aero\_Console) application. Note that the “Modify Data” toggle is not present on versions available to users outside of the Verge Aero development team.
+Figure 2.1: Shows the software bundle panel within the [Verge Aero Console](https://wiki.droneshow.software/wiki/Verge_Aero_Console) application. Note that the “Modify Data” toggle is not present on versions available to users outside of the Verge Aero development team.
 
 Figure 2.2: Shows the upload and progress panel that the user sees when performing a system configuration synchronization
 
@@ -69,11 +69,7 @@ The update process operates as follows:
 
 Figure 3.1: Shows the inspector panel for an X7 drone with fields for hivemind (CC) and autopilot firmware hashes
 
-<div align="center" data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/unnamed.png" alt="" width="98"><figcaption><p>Shows a device grid error stating <br>that the autopilot firmware <br>does not match the loaded package’s firmware</p></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="false"><figure><img src="../../.gitbook/assets/unnamed.png" alt="" width="98"><figcaption><p>Shows a device grid error stating <br>that the autopilot firmware <br>does not match the loaded package’s firmware</p></figcaption></figure></div>
 
 #### Managing [Autopilot](../../drone-show-technology/autopilot/) Parameters
 
@@ -81,12 +77,12 @@ Figure 3.1: Shows the inspector panel for an X7 drone with fields for hivemind (
 
 Figure 4.1: Shows a device grid error stating that the parameter hash does not match the expected value in the VPKG file
 
-#### [Maestro Server](https://wiki.droneshow.software/wiki/Maestro\_Server)
+#### [Maestro Server](https://wiki.droneshow.software/wiki/Maestro_Server)
 
 The Maestro server runs a standardized, unchanging linux distribution. Software is deployed and executed via transferred applications. When connecting to the maestro server, the Verge Aero Console checks the versions of the applications that are currently running. If they diverge, the Console alerts the user that it is out of date. The Console can then upload the version present in the VPKG and reboot the Maestro server to apply changes.
 
 <figure><img src="../../.gitbook/assets/unnamed (2).png" alt="" width="233"><figcaption><p>Shows the case where the Maestro version does not match the expected value in the VPKG file</p></figcaption></figure>
 
-#### [AT86](../../drone-show-hardware/networking/at86-gateway.md)/[LoRa](../../drone-show-hardware/networking/lora-gateway.md) Gateways
+#### AT86/LoRa Gateways
 
 All communication hardware contains a bootloader that allows the Verge Aero Console to perform updates remotely. The process is nearly identical to the Maestro Server process. A Telnet session is established to each connected gateway and the version is read automatically. If the version does not match the version contained within the VPKG, then the user is alerted and they may execute the process to update the device.

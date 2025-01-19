@@ -16,7 +16,7 @@ layout:
 
 ## The VVIZ Format
 
-VVIZ stands for **\[V]**erge **\[Vi]**suali**\[z]**ation Format. This format has been adopted by multiple software vendors as an interchange format for drone shows. The format has support for exporting drone position, colors, pyro payloads and more.
+VVIZ stands for **\[V]**&#x65;rge **\[Vi]**&#x73;ual&#x69;**\[z]**&#x61;tion Format. This format has been adopted by multiple software vendors as an interchange format for drone shows. The format has support for exporting drone position, colors, pyro payloads and more.
 
 VVIZ files are human readable, JSON-formatted strings. They are not intended to output flight-ready path data are also unsuitable for external validation. The file is meant for providing data for visualization only.
 
@@ -240,10 +240,18 @@ Pan and tilt describe the orientation or mounting direction of a pyro product. P
 
 #### Exporting to Finale3D
 
-[Finale3D](https://finale3d.com/) is a powerful fireworks design software that is used by industry professionals across the world. Finale3D supports importing VVIZ files as the de fact
+[Finale3D](https://finale3d.com/) is a powerful fireworks design software that is used by industry professionals across the world. Finale3D supports importing VVIZ files.
 
 To import into Finale3D, go to:&#x20;
 
 > File > Import > Import Drone Show...
+
+When imported into Finale3D, the following details are carried over:
+
+* Pyro product VDL
+* Pyro mount direction
+* Drone Heading
+* Drone Position
+* LED Color
 
 Finale3D's documentation on the format can be found [here](https://finale3d.com/documentation/vviz-file-format/).&#x20;

@@ -2,7 +2,7 @@
 
 Verge Aero's system seeks to minimize human error and risk by maximizing automation and restricting user freedom to the core functionality required for performing a drone show. By design, the system leans toward over-sensitivity to error states and seeks to reject operation at the earliest state possible. Rejection states can occur at multiple points in the pipeline: at design-time, during pre-flight, at mission execution, and during a mission.
 
-Verge Aero follows generally accepted best practices for robust software development. These include code reviews, unit testing, continuous integration, etc. Before entering a new version of any portion of the system into production, the entire system is validated via simulated integration tests and real-world flights. Verge Aero hardware, such as the [X7](https://wiki.droneshow.software/index.php?title=X7\&action=edit\&redlink=1) drone, undergoes multiple manufacturing tests to ensure that components are in working order before they are distributed to customers.
+Verge Aero follows generally accepted best practices for robust software development. These include code reviews, unit testing, continuous integration, etc. Before entering a new version of any portion of the system into production, the entire system is validated via simulated integration tests and real-world flights. Verge Aero hardware, such as the [X7](../drone-show-hardware/drones/x7.md) drone, undergoes multiple manufacturing tests to ensure that components are in working order before they are distributed to customers.
 
 This article provides an overview of the validation process that occurs continuously throughout the show production pipeline and as part of the release strategy when updates to the software or hardware are made. Additionally, this article summarizes safety features that ensure that the risk of human injury and structural damage are minimized.
 
@@ -18,7 +18,7 @@ Verge Aero’s drone show system software stack consists of the following elemen
 * Verge Aero's [Console](../drone-show-software/verge-console/)
   * A desktop application that typically runs on a laptop on-site
   * Used to configure, deploy, and monitor drone show missions
-* [Hivemind](https://wiki.droneshow.software/index.php?title=Hivemind\&action=edit\&redlink=1)
+* Hivemind
   * Onboard companion computer responsible for monitoring drone health, choreographing missions, managing peripheral payloads, and executing safety procedures
 * [PX4](autopilot/px4.md)
   * Open source autopilot stack that is responsible for sensor fusion, driving motor output, and executing a flight mission

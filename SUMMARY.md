@@ -16,6 +16,13 @@
   * [Console & Drone Session Logging](drone-show-software/quickstart/console-and-drone-session-logging.md)
   * [Troubleshooting](drone-show-software/quickstart/troubleshooting.md)
 * [Verge Design Studio](drone-show-software/publish-your-docs/README.md)
+  * [Studio Courses](drone-show-software/publish-your-docs/studio-courses/README.md)
+    * [Course 1: Getting Started](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/README.md)
+      * [Interface Tools and Settings](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/interface-tools-and-settings.md)
+      * [Show Setup](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/show-setup.md)
+      * [Launch Event, First Render, Adding Lights](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/launch-event-first-render-adding-lights.md)
+      * [Adding Show Content](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/adding-show-content.md)
+      * [Adding Movement](drone-show-software/publish-your-docs/studio-courses/course-1-getting-started/adding-movement.md)
   * [Scene Objects](drone-show-software/publish-your-docs/scene-objects/README.md)
     * [Launchpad](drone-show-software/publish-your-docs/scene-objects/launchpad.md)
   * [Show Effects](drone-show-software/publish-your-docs/show-effects/README.md)
@@ -29,10 +36,12 @@
   * [Advanced Topics](drone-show-software/publish-your-docs/advanced-topics/README.md)
     * [Using Multiple Launchpads](drone-show-software/publish-your-docs/advanced-topics/using-multiple-launchpads.md)
     * [Yaw Control](drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+    * [Designing With Pyro](drone-show-software/publish-your-docs/advanced-topics/designing-with-pyro.md)
   * [VVIZ Format](drone-show-software/publish-your-docs/vviz-format.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
   * [Slotting - Assigning Drones](drone-show-software/verge-console/slotting-assigning-drones.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
+  * [Managing Pyro](drone-show-software/verge-console/managing-pyro.md)
 * [Maestro Server](drone-show-software/maestro-server.md)
 
 ## Drone Show Hardware
@@ -43,6 +52,8 @@
 * [Drones](drone-show-hardware/drones/README.md)
   * [X1](drone-show-hardware/drones/x1.md)
   * [X7](drone-show-hardware/drones/x7.md)
+* [Payloads](drone-show-hardware/payloads/README.md)
+  * [X1 Pyro Module](drone-show-hardware/payloads/x1-pyro-module.md)
 
 ## Drone Show Technology
 
