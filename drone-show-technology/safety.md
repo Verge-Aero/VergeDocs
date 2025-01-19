@@ -74,16 +74,14 @@ Once a mission is loaded, the user must follow a setup procedure to get the dron
 
 #### Actively-Enforced Console Health Checks
 
-| Check                          | Description                                                                                                          | Mitigation Strategy                                                                                                                 |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| RTCM Data Validation           | Ensure that an RTK base station is attached, it is surveying, and it is operating with sufficient GPS accuracy       | Warn user and disallow flight                                                                                                       |
-| Drone Configuration Validation | Ensure the drone configuration has been synchronized with the console configuration. This includes                   | Warn user of configuration divergence. Reject assignment of that drone                                                              |
-| Role Validation                | Ensure that no two drones are assigned the same role in the show.                                                    | If two drones are assigned the same slot, then reject the drone farthest away from the role’s geo-coordinate                        |
-| Drone Sensor Validation        | Ensure that drones are not exhibiting sensor failures and the estimator is functioning as expected                   | Warn user of poor drone health. Reject assignment of that drone                                                                     |
-| Drone Battery Validation       | Ensure that the current battery charge supports the mission’s flight length.                                         | Warn user of low battery. Reject assignment of that drone                                                                           |
-| GPS Accuracy Validation        | Ensure that the drone is reporting RTK Fix or low RTK float accuracies                                               | Warn user of poor GPS quality. Low GPS quality results in inability to prepare launchpad since position estimations drift.          |
-| Drone Firmware Validation      | Ensure that the drone firmware and parameters match expected versions                                                | Warn user of firmware mismatch. Allow user to make a decision whether to launch or not                                              |
-| RF Interference Checks         | Perform energy scans to ensure that there is no interference on the bands being used to communicate with the drones. | Recommend to the user that they move to a different channel. Use the network configuration wizard to adjust the network parameters. |
+| Check                          | Description                                                                                                    | Mitigation Strategy                                                                                                        |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| RTCM Data Validation           | Ensure that an RTK base station is attached, it is surveying, and it is operating with sufficient GPS accuracy | Warn user and disallow flight                                                                                              |
+| Drone Configuration Validation | Ensure the drone configuration has been synchronized with the console configuration. This includes             | Warn user of configuration divergence. Reject assignment of that drone                                                     |
+| Role Validation                | Ensure that no two drones are assigned the same role in the show.                                              | If two drones are assigned the same slot, then reject the drone farthest away from the role’s geo-coordinate               |
+| Drone Sensor Validation        | Ensure that drones are not exhibiting sensor failures and the estimator is functioning as expected             | Warn user of poor drone health. Reject assignment of that drone                                                            |
+| GPS Accuracy Validation        | Ensure that the drone is reporting RTK Fix or low RTK float accuracies                                         | Warn user of poor GPS quality. Low GPS quality results in inability to prepare launchpad since position estimations drift. |
+| Drone Firmware Validation      | Ensure that the drone firmware and parameters match expected versions                                          | Warn user of firmware mismatch. Allow user to make a decision whether to launch or not                                     |
 
 #### Procedural Validation
 
@@ -129,12 +127,6 @@ As Verge Aero’s drone show system software stack consists of many complex, ind
 #### Verge Aero Simulation Framework
 
 Verge Aero has developed an automated test routine that is able to build and deploy firmware, load test show files, and remotely configure and execute a show by using the entire system stack in the same way that a user would. The only simulated component exists within the FC. The FC can be entered into SIH (Simulation-In-Hardware) mode. In this mode, sensor input is simulated and a physical model is applied to the motor output to drive changes in the sensor input. Simulated sensors include the GNSS module, IMUs, magnetometers, and barometers. The test rig consists of a full system setup with base station hardware, a PC running the console software, and N drones running in SIH mode. The more drones added to the rig, the fewer the total required missions to support our reliability requirements.
-
-#### Reliability Basis
-
-We apply a Parametric Binomial Reliability Demonstration Test (PBRDT) where the reliability requirement is 99.99% (where 1 out of 1000 flight results in flight termination) and the confidence level is 99%. Given a max mission time of 0.25 hours (15 minutes), we gather data from a sample size of N=50 units with a total test time of 12 hours of flight each. We allow for up to 4 total failures in our test routine. Given these parameters, there is less than a 1% chance that the results, given 4 or less failures, are not representative of 99.99% reliability.
-
-A failure, as mentioned above, is any case that results in triggering the flight termination system in a non-destructive manner. If any test results in a simulated drone exiting the ground risk buffer or triggering a destructive flight termination mode (system shutdown), then the entire test is marked as a failure.
 
 #### Field Testing
 
