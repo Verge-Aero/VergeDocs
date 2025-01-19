@@ -83,6 +83,6 @@ The Maestro server runs a standardized, unchanging linux distribution. Software 
 
 <figure><img src="../../.gitbook/assets/unnamed (2).png" alt="" width="233"><figcaption><p>Shows the case where the Maestro version does not match the expected value in the VPKG file</p></figcaption></figure>
 
-#### AT86/LoRa Gateways
+#### Network Gateways
 
 All communication hardware contains a bootloader that allows the Verge Aero Console to perform updates remotely. The process is nearly identical to the Maestro Server process. A Telnet session is established to each connected gateway and the version is read automatically. If the version does not match the version contained within the VPKG, then the user is alerted and they may execute the process to update the device.

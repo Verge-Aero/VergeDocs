@@ -47,7 +47,6 @@
 ## Drone Show Hardware
 
 * [Networking](drone-show-hardware/networking/README.md)
-  * [LoRa Gateway](drone-show-hardware/networking/lora-gateway.md)
   * [AT86 Gateway](drone-show-hardware/networking/at86-gateway.md)
 * [Drones](drone-show-hardware/drones/README.md)
   * [X1](drone-show-hardware/drones/x1.md)
