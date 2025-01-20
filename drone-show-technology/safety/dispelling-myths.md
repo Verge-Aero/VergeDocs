@@ -1,0 +1,19 @@
+# Dispelling Myths
+
+Often, when a drone show fails, comments and speculation offer many explanations that fall flat and do not mirror the reality of drone show technology.
+
+### A broken rotor can cause a flyaway <a href="#pdf-page-t78ensyf4xb9yrk4m25e-a-broken-rotor-can-cause-a-flyaway" id="pdf-page-t78ensyf4xb9yrk4m25e-a-broken-rotor-can-cause-a-flyaway"></a>
+
+As long as the drone maintains its estimation, it will understand its position within a show volume at all times. A drone's stability system, driven by its integrated IMU, increases or decreases thrust dynamically on each of its rotors to maintain an upright orientation. It is incredibly unlikely that a propeller will be damaged in an exact way that will allow it to both maintain stability and to result in a permanent tilt at max thrust. Should this somehow happen, the drone is still capable of understanding its position and will still obey all other safety measures. The likely scenario is that the drone will either tumble to the ground or that it will continue to fly its mission, but at reduced battery efficiency or without the ability to meet its setpoint at the appropriate speeds.
+
+### GPS Jamming <a href="#pdf-page-t78ensyf4xb9yrk4m25e-gps-jamming" id="pdf-page-t78ensyf4xb9yrk4m25e-gps-jamming"></a>
+
+While GPS jamming _can_ cause serious issues, it is very rarely the reason that a drone show fails. It is also highly illegal and far more uncommon in countries such as the United States. Unfortunately, it is often to go-to when operators explain away show failures. When GPS jamming does occur, it will most often manifest as a medium to severe dilation of precision. If it appears that only some drones are experiencing issues, and those drones are not localized to a particular region, then GPS jamming can generally be ruled out. It is also important to rule out simple RTCM stream loss as this can also cause decreased precision and messy formations.
+
+### Wind Can Cause A Drone To Fly Away <a href="#pdf-page-t78ensyf4xb9yrk4m25e-wind-can-cause-a-drone-to-fly-away" id="pdf-page-t78ensyf4xb9yrk4m25e-wind-can-cause-a-drone-to-fly-away"></a>
+
+Similar logic can be applied here as in the case of a broken rotor. If sufficiently strong winds exceed the maximum tilt or rotor output of the drone, then it may be pushed away from its target position. Gusts will only shift the drone temporarily and it will shift back to its desired setpoint. A high enough sustained wind will cause the drone to continually drift, however this would only occur in situations where the wind speeds are far in excess of any acceptable conditions and the drone show would not have been flown to begin with. Additionally, the drift would not be aggressive or random. It would be in the direction that the wind is blowing. The expected result is a geofence breach and a slow, controlled descent.
+
+### It's Impossible To Stop Human Error From Causing Flyaways <a href="#pdf-page-t78ensyf4xb9yrk4m25e-its-impossible-to-stop-human-error-from-causing-flyaways" id="pdf-page-t78ensyf4xb9yrk4m25e-its-impossible-to-stop-human-error-from-causing-flyaways"></a>
+
+It doesn't matter how many drones collide or how a show is configured, there is absolutely no reason for a modern drone show system to _allow_ a flyaway. All portions of a drone show can be precomputed and validated. There are countless ways to _automatically_ detect issues and land a drone well before they become unsafe. The pilot's job is to make high level decisions and to prepare/maximize the success of a show. As long as the safe zone is maintained, the drone show system should not _allow_ the drones to turn into high-velocity projectiles regardless of any decision the pilot makes.

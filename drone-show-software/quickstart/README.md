@@ -4,9 +4,9 @@ The Verge App Toolbox provides a centralized way to install, update, and delete 
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Login page of the Verge App Toolbox</p></figcaption></figure>
 
-After logging in, you will be presented with a list of Apps on the left hand side, as well as a list of streams for those apps whose availability is dictated by your [desktop permissions](https://app.gitbook.com/o/Oh6nX1fqlJti7A6kJdwJ/s/akGR2bVCZLTNoe2hkqeR/\~/changes/15/drone-show-software/verge-web-portal/managing-users-desktop-permissions).
+After logging in, you will be presented with a list of Apps on the left hand side, as well as a list of streams for those apps whose availability is dictated by your [desktop permissions](https://app.gitbook.com/o/Oh6nX1fqlJti7A6kJdwJ/s/akGR2bVCZLTNoe2hkqeR/~/changes/15/drone-show-software/verge-web-portal/managing-users-desktop-permissions).
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Installation page of the Verge App Toolbox which allows you to install, update, and uninstall software.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Installation page of the Verge App Toolbox which allows you to install, update, and uninstall software.</p></figcaption></figure>
 
 The toolbox allows you to install, uninstall, and update our desktop software from any stream you have permissions to.&#x20;
 

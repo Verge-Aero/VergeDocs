@@ -2,7 +2,7 @@
 
 Verge Aero's system seeks to minimize human error and risk by maximizing automation and restricting user freedom to the core functionality required for performing a drone show. By design, the system leans toward over-sensitivity to error states and seeks to reject operation at the earliest state possible. Rejection states can occur at multiple points in the pipeline: at design-time, during pre-flight, at mission execution, and during a mission.
 
-Verge Aero follows generally accepted best practices for robust software development. These include code reviews, unit testing, continuous integration, etc. Before entering a new version of any portion of the system into production, the entire system is validated via simulated integration tests and real-world flights. Verge Aero hardware, such as the [X7](../drone-show-hardware/drones/x7.md) drone, undergoes multiple manufacturing tests to ensure that components are in working order before they are distributed to customers.
+Verge Aero follows generally accepted best practices for robust software development. These include code reviews, unit testing, continuous integration, etc. Before entering a new version of any portion of the system into production, the entire system is validated via simulated integration tests and real-world flights. Verge Aero hardware, such as the [X7](../../drone-show-hardware/drones/x7.md) drone, undergoes multiple manufacturing tests to ensure that components are in working order before they are distributed to customers.
 
 This article provides an overview of the validation process that occurs continuously throughout the show production pipeline and as part of the release strategy when updates to the software or hardware are made. Additionally, this article summarizes safety features that ensure that the risk of human injury and structural damage are minimized.
 
@@ -10,17 +10,17 @@ This article provides an overview of the validation process that occurs continuo
 
 Verge Aero’s drone show system software stack consists of the following elements:
 
-* Verge Aero's [Design Studio](../drone-show-software/publish-your-docs/)
+* Verge Aero's [Design Studio](../../drone-show-software/publish-your-docs/)
   * A desktop application with an easy-to-use interface
   * Used to design, validate, and generate drone show missions
 * Verge Aero's Web Portal
   * A web-based portal that handles converting shows exported from the design studio into flyable missions
-* Verge Aero's [Console](../drone-show-software/verge-console/)
+* Verge Aero's [Console](../../drone-show-software/verge-console/)
   * A desktop application that typically runs on a laptop on-site
   * Used to configure, deploy, and monitor drone show missions
 * Hivemind
   * Onboard companion computer responsible for monitoring drone health, choreographing missions, managing peripheral payloads, and executing safety procedures
-* [PX4](autopilot/px4.md)
+* [PX4](../autopilot/px4.md)
   * Open source autopilot stack that is responsible for sensor fusion, driving motor output, and executing a flight mission
   * Nearly unmodified from its source
 
@@ -46,6 +46,8 @@ Any show designed within the design studio is subject to a set of automatic test
 #### Mitigation Strategy
 
 Any test failure rejects export. The user may not generate a flyable mission file until the tests pass.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Shows the simulation and rendering pipeline for drone shows created in the Verge Design Studio</p></figcaption></figure>
 
 ### Verge Aero Cloud Services Validation
 
@@ -114,7 +116,6 @@ Along with the active checks provided by the Verge Aero Console, the companion c
 | Sensor Health Validation       | Ensure that sensors are reporting valid data and the pose estimation is within expected errors                   |
 | Launch Position Distance Check | Ensure that the drone is within a maximum distance (< 1 meter) from its expected starting position               |
 | Show Schedule Check            | Ensure the show is being triggered within a valid date-time. Time is matched against GPS time.                   |
-| Drone Battery Validation       | Ensure that the current battery charge supports the mission’s flight length.                                     |
 | GPS Accuracy Validation        | Ensure that the drone is reporting RTK Fix or low-value RTK float accuracies.                                    |
 | Show Cue Check                 | Ensure that the show trigger Cue ID matches the loaded show. Stops an incorrect show/mission from being executed |
 
@@ -143,7 +144,7 @@ Once launched, there are redundant automatic and manual systems for detecting an
 1. FMU - Flight Management Unit
 2. CC - Companion Computer
 3. FTS - Flight Termination System
-4. [PX4](autopilot/px4.md) - An open source autopilot stack
+4. [PX4](../autopilot/px4.md) - An open source autopilot stack
 
 ### FTS Description
 
@@ -184,7 +185,7 @@ The FTS may be engaged in many situations. A high-level flow chart covering thes
 * The drone has exited the performance volume
   * If within the contingency volume, land. Otherwise, shutdown
 
-GNSS Validity Determination
+### GNSS Validity Determination
 
 The GNSS module aboard the X1/X7 provides a number of metrics that can be used to gauge validity. Additionally, the FMU provides a validity metric for global position based on sensor fusion estimate covariances. If validity is false, then the drone will enter into a failsafe.
 
@@ -211,7 +212,44 @@ The GNSS module aboard the X1/X7 provides a number of metrics that can be used t
 
 \[FMU] Estimator Flags: Global position is reported to the FMU at a rate of 5 Hz. Velocity is fused as part of a high frequency (> 100 Hz) EKF position estimate which also includes input from onboard IMUs, magnetometers and barometers. Positional movement that does not match the instantaneous movement indicated by onboard sensors will result in rising variances/errors and enter the drone into an estimator failure state which results in failsafe.
 
-Manual FTS Trigger
+### Manual FTS Trigger
 
 The typical activation of the FTS relies on autonomous methods. In a swarm of more than 1000 agents, it is infeasible to identify, target, and trigger a failsafe on a single agent in any meaningful way. Automatic detection and mitigation is always the safest, most dependable route. There are, however, paths to manually trigger the FTS on individual drones as well as the entire fleet at once. Figure 1.3/Figure 1.4 demonstrates the paths available to perform manual and automatic triggers. Any single or set of drones can be selected and terminated via the GCS over the primary radio. In addition, a standalone, redundant trigger box can be used to fire a fleetwide trigger that has no reliance on the GCS once initialized. The box must be connected to the GCS and a mission must be loaded before it is operable. A 32-bit security key is transferred that ensures that no external trigger box could be used for malicious purposes. Once transferred, the trigger box may be disconnected and function independently without any communication to the GCS. While connected, the GCS will continue to get health status from the trigger box to verify to the pilot that it is functioning as desired and that the data is synchronized. Any number of trigger boxes may be connected if additional redundancy is desired. Drones continually receive data packets from the long-range radio which function as a heartbeat. If this heartbeat is absent for more than 5 seconds, the drone flags the link as invalid and reports the state to the GCS.
+
+## Comparisons To Third-Party Systems
+
+There are some important factors when considering how safety differs between drone show systems. The current landscape of drone show technology is highly fragmented, fairly unregulated, and lacks in standards. Pilot error can be minimized through smart design decisions and automation.&#x20;
+
+### Estimator Redundancy <a href="#pdf-page-t78ensyf4xb9yrk4m25e-estimator-redundancy" id="pdf-page-t78ensyf4xb9yrk4m25e-estimator-redundancy"></a>
+
+The X1 and X7 both contain sensor redundancy. The X7 runs 4 estimators simultaneously with its 2 IMUs. The X1 runs 9 estimators simultaneously with its 3 IMUs. As long as one of the estimators remains valid, the drone's state estimate will continue to be accurate. Many other drones contains a single sensor and thus run a single estimator. There is no estimator fallback.
+
+### Modern PX4 Improvements - Estimator Stability <a href="#pdf-page-t78ensyf4xb9yrk4m25e-modern-px4-improvements-estimator-stability" id="pdf-page-t78ensyf4xb9yrk4m25e-modern-px4-improvements-estimator-stability"></a>
+
+While the inclusion of fallback sensors are very important, there are also a host of bug fixes, improvements, and major safety features introduced in PX4 over the years since its release. Some of these improvements include:
+
+* Support for Multi-EKF, the mechanism that even allows multiple sensors to be leveraged simultaneously was included in version 1.12. If the drone's software is based on a version previous to this version, then the presence of more than one sensor set is meaningless.
+* EKF-GSF, or a fallback mechanism that leverages GPS velocity should all magnetometers fail
+* Vastly improved takeoff in magnetically compromised environments
+* Active, automatic sensor calibration
+* Multiple height source fusion
+* Much more
+
+Verge Aero has been continually committed to providing up-to-date autopilot firmware that takes advantage of the latest safety features. The X1 and X7 currently support the latest PX4 version as of Q4 2024 ([1.15](https://docs.px4.io/main/en/releases/1.15.html)) and this article's authoring.
+
+### Dynamic Soft Geofence - Early Issue Detection <a href="#pdf-page-t78ensyf4xb9yrk4m25e-dynamic-soft-geofence-early-issue-detection" id="pdf-page-t78ensyf4xb9yrk4m25e-dynamic-soft-geofence-early-issue-detection"></a>
+
+One of the most important ways to avoid drones coming dangerously close to the audience is to begin grounding maneuvers as early as possible when a failure occurs. It is problematic that the majority of firmwares wait until the soft geofence is breached (which is nearly at the show's most outside boundary) before initiating an RTL or land command. This means that its vertical position is maintained as the drone hurtles toward the geofence and action is taken at the last possible moment.
+
+From the moment a drone launches until the moment it touches the ground, the X1/X7's hivemind companion computer provides a 4 meter-radius 3D "bubble" that the drone must stay within in order to continue flight. This bubble moves along the flight plan's target trajectory and provides a _very_ early detection of any kind of divergence from expected flight position. This provides early detection for a multitude of issues such as GPS jamming, GPS spoofing, airframe damage, motor failure, sensor issues, and more. Depending on the flight space, this can lead to the detection of issues and subsequent action more than 100 meters before arriving at the hard geofence or the point in time that other systems take action.
+
+<figure><img src="https://open.gitbook.com/~gitbook/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXecsLagLYGuM2nkMeL5HO4RXOuwVGW-lsoKuROjpQabXyhxM8UhEW2xI6anwNbZRQyLJ6Uurig7Xo2WfxizyjdWYTCWfkD-fw8xc3XvZ_R97D2SKHMpl8A7HqECAVeWeENp6KKhUIE0YjcMHtvSOETfyVaj%3Fkey%3DCycmD5XzuOp_sKnPLZuoAQ&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=a33b85ac&#x26;sv=2" alt=""><figcaption><p>Shows the dynamic soft geofence used for every Verge Aero show performance</p></figcaption></figure>
+
+## Pilot Error - Show Space <a href="#pdf-page-t78ensyf4xb9yrk4m25e-pilot-error-show-space" id="pdf-page-t78ensyf4xb9yrk4m25e-pilot-error-show-space"></a>
+
+In the NTSB investigation, it was stated that the pilot accidentally shifted the show space and the geofence into a location that . When a show is created in the Verge Design Studio, the geofence and associated safe space is generated automatically and may not be modified by the pilot. The ability to "rotate" the show space is especially problematic as small adjustments may compound into massive swings of the geofence coordinates as distance grows from the show's center point.
+
+### Pilot Error - Launch Sequence <a href="#pdf-page-t78ensyf4xb9yrk4m25e-pilot-error-launch-sequence" id="pdf-page-t78ensyf4xb9yrk4m25e-pilot-error-launch-sequence"></a>
+
+In many drone show systems the launch sequence is configured and executed, whether automatically or manually, independently from the pre-planned and validated show trajectories. This provides additional room for error and is part of Sky Element's explanation as to why the Orlando show experienced mass collisions. In the Verge system, the launch sequence is not separated from the rest of the show sequence and cannot be modified by the pilot in any way. It is validated and deconflicted by both the design studio (on export) and the console application (on import). There is no chance that this type of failure will occur with X1s or X7s.
 
