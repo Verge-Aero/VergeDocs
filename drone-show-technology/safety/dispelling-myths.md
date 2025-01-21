@@ -1,6 +1,6 @@
 # Dispelling Myths
 
-Often, when a drone show fails, comments and speculation offer many explanations that fall flat and do not mirror the reality of drone show technology.
+Often, when a drone show fails, comments and speculation offer many explanations that fall flat and do not mirror the reality of drone show technology. Collected here are a series of myths related to drone show issues and an explanation as to why they may not be valid.
 
 ### A broken rotor can cause a flyaway <a href="#pdf-page-t78ensyf4xb9yrk4m25e-a-broken-rotor-can-cause-a-flyaway" id="pdf-page-t78ensyf4xb9yrk4m25e-a-broken-rotor-can-cause-a-flyaway"></a>
 
