@@ -112,7 +112,7 @@ The pyro module performs multiple checks during bringup and exposes in-depth inf
 | Comm Failure     | Failed to communicate with the pyro board                                                  |
 | CPU Time Error   | The pyro driver is not getting enough CPU time                                             |
 
-Per-Cue circuit testing ensure that the firing system is working properly and can pass errors on a per-cue basis
+Per-Cue circuit testing ensure that the firing system is working properly and can pass errors on a per-cue basis.
 
 #### Overweight Failsafe
 
