@@ -70,7 +70,7 @@ The following conditions result in the module being immediately disarmed and pow
 * Drone enters failsafe due to sensor failure, low-battery, or otherwise
 * Drone is commanded to abort the show for any reason, regardless of requested behavior
 
-For a full breakdown of standard Verge Aero safety mechanisms, refer to [this article](../../drone-show-technology/safety/).
+For a full breakdown of standard Verge Aero safety mechanisms, refer to [this article](../../drone-show-technology/safety.md).
 
 #### Soft-Arm Mechanism
 
