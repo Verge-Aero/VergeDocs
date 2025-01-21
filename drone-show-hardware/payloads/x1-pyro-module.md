@@ -4,7 +4,7 @@ The X1 drone has the capability to comfortably lift 500g with an upper maximum o
 
 ## The X1 Pyro Module
 
-Verge Aero has developed a custom pyro module that integrates directly with its drone show platform. Coming in at \[Insert Weight Here], it provides an affordable, lighter-weight alternative to 3rd-party firing systems that unneccesarily include their own power source, radio module, packaging, and independent control software. The goal of the X1 pyro module is to minimize weight, and maximize safety.
+Verge Aero has developed a custom pyro module that integrates directly with its drone show platform. Coming in at a mere 70 grams, it provides an affordable, lighter-weight alternative to 3rd-party firing systems that unneccesarily include their own power source, radio module, packaging, and independent control software. The goal of the X1 pyro module is to minimize weight, and maximize safety.
 
 | Feature                  | X1 Pyro Module                                         | Cobra                               | Fire One WMM-4Q                     |
 | ------------------------ | ------------------------------------------------------ | ----------------------------------- | ----------------------------------- |
@@ -27,13 +27,16 @@ Verge Aero has developed a custom pyro module that integrates directly with its 
 
 ### Mounting The Pyro Module
 
-The X1 pyro module is attached via a quick-mount bracket. The bracket is secured via 4 points of contact, each contact uses a push-button interface to make detaching the bracket quick and easy. Because the pyro module is fixed to the pyro bracket, pyro products may be mounted and configured&#x20;
+The X1 pyro module is attached via a quick-mount bracket. The bracket is secured via 4 points of contact, each contact uses a push-button interface to make detaching the bracket quick and easy. Because the pyro module is fixed to the pyro bracket, pyro products may be mounted and configured independently from the drone itself. This division is important for two reasons:
+
+1. A certified pyro technician can focus on rigging and mounting the products without the drone present
+2. If a drone experiences issues and must be pulled from the show, it becomes incredibly to swap the entire pyro payload to a different drone
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>One of the four attach/detach points</p></figcaption></figure>
 
 A single ribbon cable provides an interface between the hivemind control board and the pyro module. This is the only data/power line that must be attached when connecting the pyro module. It may be disconnected/connected when the drone is powered on without any concern that cues will be triggered. Once disconnected, it must be once again armed from the console to enable firing.
 
-<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>The mesh ribbon cable providing power and data connections to the X1 companion computer</p></figcaption></figure>
 
 ## [Design Studio](../../drone-show-software/publish-your-docs/) Integration
 
@@ -78,9 +81,18 @@ If a pyro module is armed and the attached drone is launched, it conducts a "Sof
 
 #### **Circuit Fault Detection**
 
-The pyro module performs multiple checks during bringup and exposes in-depth information to the user about its state.
+The pyro module performs multiple checks during bringup and exposes in-depth information to the user about its state. Some fault states include:
 
-\[List some known failure states]
+| Fault            | Description                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------ |
+| Bad PFET         | One or more cues detected a bad PFET                                                       |
+| No Power         | 12V power good signal was not present when expected                                        |
+| Unexpected Power | 12V power good signal was present when not expected                                        |
+| Timeout          | The client failed to issue a command within the timeout period (while not idle or faulted) |
+| Comm Failure     | Failed to communicate with the pyro board                                                  |
+| CPU Time Error   | The pyro driver is not getting enough CPU time                                             |
+
+Per-Cue circuit testing ensure that the firing system is working properly and can pass errors on a per-cue basis
 
 #### Overweight Failsafe
 
@@ -89,6 +101,4 @@ The Verge Aero drone show system utilizes a floating, soft-geofence "bubble" tha
 ### Mounting Pyro Product
 
 The flat metal sheeting protects the underside of the drone from heat and evenly distributes recoil across the chassis. It comes with affixed cable clips to simplify wire routing. It is absolutely imperative that wires be kept taut and cleanly routed in order to avoid situations where they become tangled in the drone's rotors.
-
-\[Include examples of mounting pyro and running wired here]
 
