@@ -6,6 +6,6 @@ The Verge Web Portal allows Organization Managers to manage their user's desktop
 
 This modal will allow you to add or remove your user's desktop permissions which governs what release streams are available to them in the [Verge App Toolbox](../quickstart/).
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Adding "Beta" access to the Verge Aero Design Studio</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Adding "Beta" access to the Verge Aero Design Studio</p></figcaption></figure>
 
 If there are no subscriptions available in the dropdown, try adding a license for this application in the "Licenses" tab for this user first.

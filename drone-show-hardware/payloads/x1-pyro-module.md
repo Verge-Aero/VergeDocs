@@ -6,20 +6,20 @@ The X1 drone has the capability to comfortably lift 500g with an upper maximum o
 
 Verge Aero has developed a custom pyro module that integrates directly with its drone show platform. Coming in at a mere 70 grams, it provides an affordable, lighter-weight alternative to 3rd-party firing systems that unneccesarily include their own power source, radio module, packaging, and independent control software. The goal of the X1 pyro module is to minimize weight, and maximize safety.
 
-| Feature                  | X1 Pyro Module                                         | Cobra                               | Fire One WMM-4Q                     |
-| ------------------------ | ------------------------------------------------------ | ----------------------------------- | ----------------------------------- |
-| Weight                   | \~70g                                                  | \~270g                              | \~190g                              |
-| Dimensions               | 7.25 x 5.5 x 2.75 cm                                   | 10 x 9.2 x 2.4 cm                   | 12.2 x 6.9 x 2.8 cm                 |
-| Unique Addresses         |  > 65K                                                 | 200                                 | 99                                  |
-| Radio Redundancy         | <mark style="color:green;">✔</mark> \[Sub-Ghz/2.4 Ghz] | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
-| Wireless Range           | 4+ km LoS                                              | 500m LoS                            | 6 km LoS                            |
-| Timecode Support         | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
-| Number of Cues           | 6                                                      | 6                                   | 4                                   |
-| OTA Updates              | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:red;">X</mark>   |
-| Per-Cue Continuity Tests | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
-| Remote Arm/Disarm        | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
-| Remote Manual Trigger    | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
-| Auto-Disarm Systems      | <mark style="color:green;">✔</mark>                    | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
+| Feature                                              | X1 Pyro Module                                         | Cobra                               | Fire One WMM-4Q                     |
+| ---------------------------------------------------- | ------------------------------------------------------ | ----------------------------------- | ----------------------------------- |
+| Weight                                               | \~70g                                                  | \~270g                              | \~190g                              |
+| Dimensions                                           | 7.25 x 5.5 x 2.75 cm                                   | 10 x 9.2 x 2.4 cm                   | 12.2 x 6.9 x 2.8 cm                 |
+| Unique Addresses                                     |  > 65K                                                 | 200                                 | 99                                  |
+| Radio Redundancy                                     | <mark style="color:green;">✔</mark> \[Sub-Ghz/2.4 Ghz] | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
+| Wireless Range                                       | 4+ km LoS                                              | 500m LoS                            | 6 km LoS                            |
+| Timecode Support                                     | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
+| Number of Cues                                       | 6                                                      | 6                                   | 4                                   |
+| OTA Updates                                          | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:red;">X</mark>   |
+| Per-Cue Continuity Tests                             | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
+| Remote Arm/Disarm                                    | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
+| Remote Manual Trigger                                | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
+| [Auto-Disarm Systems](x1-pyro-module.md#auto-disarm) | <mark style="color:green;">✔</mark>                    | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
 
 
 
@@ -40,33 +40,43 @@ A single ribbon cable provides an interface between the hivemind control board a
 
 ## [Design Studio](../../drone-show-software/publish-your-docs/) Integration
 
-The design studio provides all necessary tools to plan, visualize, and validate drone shows with integrated pyro. When the X1&#x20;
+The design studio provides all necessary tools to plan, visualize, and validate drone shows with integrated pyro. When using the X1 pyro module, triggers programmed into the show via the studio are automatically fired as part of the same show file that is in use today. This completely eliminates the need for third-party hardware and software.
 
-#### Product Configuration
+### Product Configuration
 
-Each pyro product can be configured&#x20;
+Each pyro product can be configured independently to define its VDL (Finale3D), mounting direction, and more. All of these fields are exported as part of the [VVIZ ](../../drone-show-software/publish-your-docs/vviz-format.md)format which is supported by third-party software such as [Finale3D](../../drone-show-software/publish-your-docs/advanced-topics/designing-with-pyro.md#finale3d-support).
 
-#### Pre-Viz
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Examples of some products defined for a series of drones</p></figcaption></figure>
 
-The design studio provides built-in visualization for a small, but relevant set of pyro products.&#x20;
+### Parametric Triggers
 
-#### [Yaw Control](../../drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+Rather than program each trigger independently, shape-based triggers can be generated in the same way lighting events are. Using geometric information, pyro can be triggered based on the order they are placed in a shape. For example, they can automatically be fired counter-clockwise around a circle using a single event.
 
-Drone heading can be leveraged to simplify pyro mounting and to enable&#x20;
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>The event settings for a sequential trigger</p></figcaption></figure>
 
-####
+### Pre-Viz
+
+The Design Studio is capable of showing realistic previews of pyro drones at any point in the design process. The visualization accounts for the drone's movement, the way the pyro is mounted, and what effect is being triggered.
+
+<figure><img src="../../.gitbook/assets/Waterfall_Test_2023-10-19_01-08-18.gif" alt=""><figcaption><p>A waterfall effect visualized in the design studio</p></figcaption></figure>
+
+### [Yaw Control](../../drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+
+Along with position, the design studio allows drones to be turned to face a specific direction. This can be changed dynamically throughout the show depending on the shape that the drones are traveling on. The simplest example of this, along with trigger control, can be seen below, with a circle that fires comets outward by yawing the drones and firing them in order of the circle.
+
+<figure><img src="../../.gitbook/assets/DirectionTest_2023-10-28_13-29-52.gif" alt=""><figcaption><p>Red comets being fired outward around a circle with a sequential trigger</p></figcaption></figure>
 
 ## [Console](../../drone-show-software/verge-console/) Integration
 
-When using the X1 pyro module, a new panel appears within the drone's inspector that exposes important information and tools relevant to the module.
+When using the X1 pyro module, a new panel appears within the drone's inspector that exposes important information and tools relevant to the module. The expected product and mount directions are exported as part of the show file.
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>A sample image of the inspector view for pyro with an unconnected E-Match, a bad circuit detection, and two successfully connected E-Matches</p></figcaption></figure>
 
 ## Pyro View
 
+Mirroring the functionality of the core device grid view, a new "Pyro View" displays color-coded cue health status in a single view. A greyed-out cue is unused in the show. A red cue is either disconnected or experiencing an error. A green cue means that it is populated, present in the show, and clear of any faults. This makes it very easy to identify which modules are experiencing issues.
 
-
-Per-Cue Enable/Disable
-
-
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>An example of 100 pyro drones with their cue states displayed</p></figcaption></figure>
 
 ## Safety Features
 
