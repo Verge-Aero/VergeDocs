@@ -40,23 +40,33 @@ A single ribbon cable provides an interface between the hivemind control board a
 
 ## [Design Studio](../../drone-show-software/publish-your-docs/) Integration
 
-The design studio provides all necessary tools to plan, visualize, and validate drone shows with integrated pyro.
+The design studio provides all necessary tools to plan, visualize, and validate drone shows with integrated pyro. When the X1&#x20;
 
-#### Product Mounting Descriptions
+#### Product Configuration
 
-Each pyro product can be&#x20;
+Each pyro product can be configured&#x20;
 
 #### Pre-Viz
 
+The design studio provides built-in visualization for a small, but relevant set of pyro products.&#x20;
+
 #### [Yaw Control](../../drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+
+Drone heading can be leveraged to simplify pyro mounting and to enable&#x20;
 
 ####
 
 ## [Console](../../drone-show-software/verge-console/) Integration
 
+When using the X1 pyro module, a new panel appears within the drone's inspector that exposes important information and tools relevant to the module.
+
 ## Pyro View
 
+
+
 Per-Cue Enable/Disable
+
+
 
 ## Safety Features
 
