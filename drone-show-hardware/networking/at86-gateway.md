@@ -1,25 +1,28 @@
-# AT86 Gateway
+# Long-Range Gateway
 
-The AT86 is a radio module that serves as the primary communication link between drones and the [Maestro Server](https://wiki.droneshow.software/wiki/Maestro\_Server). The Atmel AT86RF215 radio provides all functionality necessary to support the [IEEE 802.15.4](https://wiki.droneshow.software/wiki/IEEE\_802.15.4) standard that the [Verge Aero network framework](https://wiki.droneshow.software/index.php?title=Nixie\&action=edit\&redlink=1) is built upon. It contains tranceivers for two bands, one 2.4 GHz band, and one Sub-GHz band.
+All Verge Aero drones contain a long-range, low-bandwidth radio that is used to send mission-critical messages. The radio, in practice, is _very_ low bandwidth and the data rates that we use are in the low, single digit kbit/s range, or even less. The upside, however, is that the drones are essentially guaranteed data reception in line-of-sight scenarios. The technology has a theoretical range of more than 10 Km, but this has never been tested in practice with the [Verge Aero](../../) platform. In practical scenarios, there has never been a hardware-driven loss of the long-range data link.
 
-<figure><img src="../../.gitbook/assets/AT86_Chip.png" alt="" width="375"><figcaption><p>An Atmel AT86RF215 chip</p></figcaption></figure>
+The [X1 ](../drones/x1.md)and [X7](../drones/x7.md) integrate a long-range radio to support mission-critical, broadcast data payloads. This is the _only_ link necessary to successfully execute a show. A loss of all other data transfer methods after a show has been launched will still lead to a successful mission.
 
-The [X1](../drones/x1.md) and [X7](../drones/x7.md) integrate an AT86 radio to support any point-to-point read or write operations. It is configured to provide a good balance between high-reliability and high-bandwidth.
+The radio module provides continuous frequency coverage from 150MHz to 960MHz, allowing the support of all major sub-GHz ISM bands around the world.
+
+| Region        | Center Frequency |
+| ------------- | ---------------- |
+| United States | 915 MHz          |
+| Europe        | 433/868 MHz      |
+| China         | 470/779 MHz      |
 
 ### What It Is Used For
 
-The AT86 is the primary data link and provides an up and downlink. It is used for:
+Given its robust nature, [Verge Aero](../../) uses the long-range link for mission-critical, transmit-only data. It is used for trigger events, and for [RTCM ](../../drone-show-technology/gps-gnss/rtcm.md)data. Some examples of trigger events include:
 
-* [Telemetry](https://wiki.droneshow.software/index.php?title=Telemetry\&action=edit\&redlink=1)
-* Individual Drone Commands
-  * Setting safeties
-  * Setting individual [light modes](https://wiki.droneshow.software/index.php?title=Light\_modes\&action=edit\&redlink=1)
-  * [Calibration](https://wiki.droneshow.software/index.php?title=Calibration\&action=edit\&redlink=1)
-  * [Motor Tests](https://wiki.droneshow.software/index.php?title=Motor\_Tests\&action=edit\&redlink=1)
-  * Etc.
-* [Uploading show files](https://wiki.droneshow.software/index.php?title=UFTP\&action=edit\&redlink=1)
-* [Updating drone firmware](../../drone-show-software/verge-console/firmware-vpkg-system.md)
+* Launching the show
+* Aborting the show (via land all or [RTH](https://wiki.droneshow.software/index.php?title=Smart_RTH\&action=edit\&redlink=1))
+* Setting drone safety states
+* Setting drone light modes
 
-#### Dual-Band Operation
+### Console
 
-Both bands can be used simultaneously, but only one is used in the current software package. Support for dual-band operation is intended to be added in the latter half of 2024.
+The long-range radio is also not absolutely necessary for a successful show. Configuration tools in the [Verge Aero Console](../../drone-show-software/verge-console/) allows all long-range data to intead be transmitted over the telemetry gateway. This alternate module has lower range, but is still sufficient for the majority of operating environments.
+
+The long-range radio channel may be configured from the [Verge Aero Console](../../drone-show-software/verge-console/) in software by using the network configuration wizard. Total number of channels available differ by region.
