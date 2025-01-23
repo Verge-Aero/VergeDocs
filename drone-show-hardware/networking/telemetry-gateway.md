@@ -1,6 +1,6 @@
 # Telemetry Gateway
 
-The [X1](../drones/x1.md) and [X7](../drones/x7.md) integrate a dual-band radio to support any point-to-point read or write operations. It is configured to provide a good balance between high-reliability and high-bandwidth.
+The [X1](../drones/x1.md) and [X7](../drones/x7.md) integrate a dual-band radio to support any point-to-point read or write operations. It is configured to provide a good balance between high-reliability and high-bandwidth. It contains tranceivers for two bands, one 2.4 GHz band, and one Sub-GHz band.
 
 ### What It Is Used For
 
