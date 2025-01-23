@@ -6,6 +6,10 @@ hidden: true
 
 The Verge Design Studio contains fully-integrated tools to design, visualize, and validate shows with pyro drones.
 
+{% hint style="info" %}
+Although the tools covered here are still very helpful for designing drone shows with third-party modules (such as the [Cobra 6M SPFX Module](https://www.cobrafiringsystems.com/6m)), to take full advantage of the automation and workflows available you must use one of Verge Aero's [integrated firing systems](../../../drone-show-hardware/payloads/x1-pyro-module.md).
+{% endhint %}
+
 ## Defining Pyro And Mounting
 
 

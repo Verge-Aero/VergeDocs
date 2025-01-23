@@ -47,7 +47,8 @@
 ## Drone Show Hardware
 
 * [Networking](drone-show-hardware/networking/README.md)
-  * [AT86 Gateway](drone-show-hardware/networking/at86-gateway.md)
+  * [Long-Range Gateway](drone-show-hardware/networking/at86-gateway.md)
+  * [Telemetry Gateway](drone-show-hardware/networking/telemetry-gateway.md)
 * [Drones](drone-show-hardware/drones/README.md)
   * [X1](drone-show-hardware/drones/x1.md)
   * [X7](drone-show-hardware/drones/x7.md)
