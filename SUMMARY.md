@@ -11,6 +11,7 @@
   * [Managing User's Desktop Permissions](drone-show-software/verge-web-portal/managing-users-desktop-permissions.md)
   * [Performance Summaries & Session Log Analysis](drone-show-software/verge-web-portal/performance-summaries-and-session-log-analysis.md)
   * [Managing License Activations](drone-show-software/verge-web-portal/managing-license-activations.md)
+  * [Verge Remote](drone-show-software/verge-web-portal/verge-remote.md)
 * [Verge App Toolbox](drone-show-software/quickstart/README.md)
   * [Offline Mode](drone-show-software/quickstart/offline-mode.md)
   * [Console & Drone Session Logging](drone-show-software/quickstart/console-and-drone-session-logging.md)
