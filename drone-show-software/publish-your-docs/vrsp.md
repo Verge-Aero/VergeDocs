@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # VRSP
 
 The **V**erge **R**obotics **S**treaming **P**rotocol is a real-time network protocol that is designed to enable third-party applications to display the active state of a Verge Design Studio session.
