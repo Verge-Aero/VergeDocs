@@ -50,10 +50,6 @@ PackageContents:
 
 Synchronizing the system to a VPKG is incredibly simple from a user-perspective. The user must ensure that the proper bundle version is loaded into the “Software Bundles” panel, press the “Upload” button, and then verify that they wish to start the upload process. After that, the system automatically handles all necessary update actions. It is still important that the user maintain vigilance and look for inconsistencies.
 
-Figure 2.1: Shows the software bundle panel within the [Verge Aero Console](https://wiki.droneshow.software/wiki/Verge_Aero_Console) application. Note that the “Modify Data” toggle is not present on versions available to users outside of the Verge Aero development team.
-
-Figure 2.2: Shows the upload and progress panel that the user sees when performing a system configuration synchronization
-
 #### Drone Version Sync
 
 As part of a drone’s network initialization process, version hashes for the autopilot and companion computer are exchanged. These hashes are unique to each build and provide a snapshot of the software version. The Console application compares the provided hash against the one that is present in the VPKG. If they do not match, then the drone is flagged as “Out of Date” and is not usable until the issue has been resolved.

@@ -10,7 +10,7 @@ Verge Aero has developed a custom pyro module that integrates directly with its 
 | ---------------------------------------------------- | ------------------------------------------------------ | ----------------------------------- | ----------------------------------- |
 | Weight                                               | \~70g                                                  | \~270g                              | \~190g                              |
 | Dimensions                                           | 7.25 x 5.5 x 2.75 cm                                   | 10 x 9.2 x 2.4 cm                   | 12.2 x 6.9 x 2.8 cm                 |
-| Unique Addresses                                     |  > 65K                                                 | 200                                 | 99                                  |
+| Unique Addresses                                     | > 65K                                                  | 400                                 | 99                                  |
 | Radio Redundancy                                     | <mark style="color:green;">✔</mark> \[Sub-Ghz/2.4 Ghz] | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
 | Wireless Range                                       | 4+ km LoS                                              | 500m LoS                            | 6 km LoS                            |
 | Timecode Support                                     | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
@@ -21,7 +21,7 @@ Verge Aero has developed a custom pyro module that integrates directly with its 
 | Remote Manual Trigger                                | <mark style="color:green;">✔</mark>                    | <mark style="color:green;">✔</mark> | <mark style="color:green;">✔</mark> |
 | [Auto-Disarm Systems](x1-pyro-module.md#auto-disarm) | <mark style="color:green;">✔</mark>                    | <mark style="color:red;">X</mark>   | <mark style="color:red;">X</mark>   |
 
-
+As a weight-saving measure, the module has been potted with a silicon material that provides water-proofing.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-01-13 113617.jpg" alt=""><figcaption><p>A close-up of the pyro module</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ Verge Aero has developed a custom pyro module that integrates directly with its 
 The X1 pyro module is attached via a quick-mount bracket. The bracket is secured via 4 points of contact, each contact uses a push-button interface to make detaching the bracket quick and easy. Because the pyro module is fixed to the pyro bracket, pyro products may be mounted and configured independently from the drone itself. This division is important for two reasons:
 
 1. A certified pyro technician can focus on rigging and mounting the products without the drone present
-2. If a drone experiences issues and must be pulled from the show, it becomes incredibly to swap the entire pyro payload to a different drone
+2. If a drone experiences issues and must be pulled from the show, it becomes incredibly easy to swap the entire pyro payload to a different drone
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption><p>One of the four attach/detach points</p></figcaption></figure>
 
@@ -84,9 +84,9 @@ Mirroring the functionality of the core device grid view, a new "Pyro View" disp
 
 The pilot has the ability to disarm _all_ pyro modules across the entire fleet with the push of a button. This will always be the safest option in the case of an emergency. Individual drones may also be selected and disarmed manually, but other, automatic safety features will generally make this capability superfluous.
 
-#### Auto-Disarm&#x20;
+#### Auto-Disarm
 
-When hundreds or thousands of pyro drones are active and in-flight, it becomes virtually impossible to identify and disable specific pyro modules. The only fallback is to disable _every_ drone simultaneously at the first notice of failure. This weakness is overcome by the X1 pyro module. Crucially, the merger of pyro module and flight control systems allow the drone to make informed decisions and ensures that firing never occurs in any situation it deems unsafe.&#x20;
+When hundreds or thousands of pyro drones are active and in-flight, it becomes virtually impossible to identify and disable specific pyro modules. The only fallback is to disable _every_ drone simultaneously at the first notice of failure. This weakness is overcome by the X1 pyro module. Crucially, the merger of pyro module and flight control systems allow the drone to make informed decisions and ensures that firing never occurs in any situation it deems unsafe.
 
 The following conditions result in the module being immediately disarmed and powered down:
 
@@ -121,4 +121,3 @@ The Verge Aero drone show system utilizes a floating, soft-geofence "bubble" tha
 ### Mounting Pyro Product
 
 The flat metal sheeting protects the underside of the drone from heat and evenly distributes recoil across the chassis. It comes with affixed cable clips to simplify wire routing. It is absolutely imperative that wires be kept taut and cleanly routed in order to avoid situations where they become tangled in the drone's rotors.
-

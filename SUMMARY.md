@@ -39,6 +39,7 @@
     * [Yaw Control](drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
     * [Designing With Pyro](drone-show-software/publish-your-docs/advanced-topics/designing-with-pyro.md)
   * [VVIZ Format](drone-show-software/publish-your-docs/vviz-format.md)
+  * [VRSP](drone-show-software/publish-your-docs/vrsp.md)
 * [Verge Console](drone-show-software/verge-console/README.md)
   * [Slotting - Assigning Drones](drone-show-software/verge-console/slotting-assigning-drones.md)
   * [Firmware - VPKG System](drone-show-software/verge-console/firmware-vpkg-system.md)
