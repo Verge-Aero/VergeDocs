@@ -184,11 +184,17 @@ Local coordinates are encoded using a left-handed coordinate system, where y is 
 
 Additional device characteristics can be included here based on the value of the option flags:
 
-#### Light Color \[Optional] (0x1) : An RGB, 24-bit value that indicates the current color of the device's LED payload.
+#### Light Color \[Optional] (0x1) :&#x20;
 
-#### Heading \[Optional] (0x2): An 16-bit floating point value that indicates which way the device is pointing.
+An RGB, 24-bit value that indicates the current color of the device's LED payload.
 
-#### Orientation \[Optional] (0x4):  Represented by a half-precision quaternion, this provides a full description of the device's rotation.
+#### Heading \[Optional] (0x2):&#x20;
+
+An 16-bit floating point value that indicates which way the device is pointing.
+
+#### Orientation \[Optional] (0x4): &#x20;
+
+Represented by a half-precision quaternion, this provides a full description of the device's rotation.
 
 
 
