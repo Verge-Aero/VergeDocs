@@ -154,7 +154,7 @@ A description of an attached laser. Functionally similar to spotlights, but with
 
 ## Data Packet - `"VRSP_DATA"`
 
-Data packets contain serialized swarm state data. This includes position and all data describing the current state of attached payloads. The order of the payloads,&#x20;
+Data packets contain serialized swarm state data. This includes position and all data describing the current state of attached payloads. Payload data is serialized according to options described in the payload definition fields of the definition packet.
 
 ```csharp
 //Required
