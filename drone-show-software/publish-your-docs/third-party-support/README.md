@@ -10,3 +10,7 @@ The Design Studio provides support for multiple third-part applications. Verge A
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
+## [FWSim](https://www.fwsim.com/doc/en/drone_shows.html)
+
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
