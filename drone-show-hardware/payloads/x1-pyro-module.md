@@ -46,13 +46,13 @@ The design studio provides all necessary tools to plan, visualize, and validate 
 
 Each pyro product can be configured independently to define its VDL (Finale3D), mounting direction, and more. All of these fields are exported as part of the [VVIZ ](../../drone-show-software/publish-your-docs/vviz-format.md)format which is supported by third-party software such as [Finale3D](../../drone-show-software/publish-your-docs/advanced-topics/designing-with-pyro.md#finale3d-support).
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Examples of some products defined for a series of drones</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Examples of some products defined for a series of drones</p></figcaption></figure>
 
 ### Parametric Triggers
 
 Rather than program each trigger independently, shape-based triggers can be generated in the same way lighting events are. Using geometric information, pyro can be triggered based on the order they are placed in a shape. For example, they can automatically be fired counter-clockwise around a circle using a single event.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>The event settings for a sequential trigger</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The event settings for a sequential trigger</p></figcaption></figure>
 
 ### Pre-Viz
 
@@ -70,7 +70,7 @@ Along with position, the design studio allows drones to be turned to face a spec
 
 When using the X1 pyro module, a new panel appears within the drone's inspector that exposes important information and tools relevant to the module. The expected product and mount directions are exported as part of the show file.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>A sample image of the inspector view for pyro with an unconnected E-Match, a bad circuit detection, and two successfully connected E-Matches</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>A sample image of the inspector view for pyro with an unconnected E-Match, a bad circuit detection, and two successfully connected E-Matches</p></figcaption></figure>
 
 ## Pyro View
 
