@@ -6,6 +6,8 @@ Verge Aero follows generally accepted best practices for robust software develop
 
 This article provides an overview of the validation process that occurs continuously throughout the show production pipeline and as part of the release strategy when updates to the software or hardware are made. Additionally, this article summarizes safety features that ensure that the risk of human injury and structural damage are minimized.
 
+For a less technical explanation of Verge's commitment to safety please read the article [here](https://verge.aero/safety).
+
 ### Verge Aero Drone Show System Components
 
 Verge Aero’s drone show system software stack consists of the following elements:
