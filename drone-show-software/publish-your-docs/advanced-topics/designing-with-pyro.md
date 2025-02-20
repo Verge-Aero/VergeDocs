@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # Designing With Pyro
 
 The Verge Design Studio contains fully-integrated tools to design, visualize, and validate shows with pyro drones.
@@ -12,7 +8,9 @@ Although the tools covered here are still very helpful for designing drone shows
 
 ## Defining Pyro And Mounting
 
+Each cue can be assigned its own pyro product and mounting direction. When enabled, cues and their associated firing vector are color-coded to make it easier to identify visually. Products are defined via [VDL](https://finale3d.com/documentation/vdl-effect-glossary/). A limited number of products are currently supported, but any can be used when exported to an external application such as Finale3D. Mounting direction can be chosen via a dropdown. Simple directions such as forward/backward, up/down, etc are provided with a custom direction also definable. These directions are relative to the drone and not to the world unless the drones are commanded to point north.&#x20;
 
+<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 ## Cue Triggers
 
@@ -65,7 +63,9 @@ More products will be added in the future, however pyro pre-viz/design applicati
 
 ## Pointing Pyro
 
-Pyro mounts will obey drone [yaw control](yaw-control.md) and display guiding arrows to provide feedback during the design process.&#x20;
+Pyro mounts will obey drone [yaw control](yaw-control.md) and display guiding arrows to provide feedback during the design process. Ultimately, the only thing the designer needs to be concerned with is that the arrow (and subsequent previz) points in the direction they expect. A simple example of this is in the case that a comet is mounted out of the back of a drone. When configuring a payload target event, the drone must be rotated an additional 180 degrees to point the product as though it were facing out of the front of a drone. Product pointing up or down can not be rotated. Yaw can also be updated on a per-frame basis and create complex sequences.
+
+<figure><img src="../../../.gitbook/assets/ezgif-260edddee7a425.gif" alt=""><figcaption><p>Example of two cues being targeted around a circle. In this example, the drone is shown continuously rotating to point along the tangent of the circle.</p></figcaption></figure>
 
 ## Finale3D Support
 
