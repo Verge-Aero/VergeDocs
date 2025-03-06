@@ -1,12 +1,12 @@
 # Safety
 
+**In light of recent events in the drone show world, industry concern for system safety is at an all time high. Click [here](https://verge.aero/safety) to learn about Verge Aero's safefy advantage.**
+
 Verge Aero's system seeks to minimize human error and risk by maximizing automation and restricting user freedom to the core functionality required for performing a drone show. By design, the system leans toward over-sensitivity to error states and seeks to reject operation at the earliest state possible. Rejection states can occur at multiple points in the pipeline: at design-time, during pre-flight, at mission execution, and during a mission.
 
 Verge Aero follows generally accepted best practices for robust software development. These include code reviews, unit testing, continuous integration, etc. Before entering a new version of any portion of the system into production, the entire system is validated via simulated integration tests and real-world flights. Verge Aero hardware, such as the [X7](../drone-show-hardware/drones/x7.md) drone, undergoes multiple manufacturing tests to ensure that components are in working order before they are distributed to customers.
 
 This article provides an overview of the validation process that occurs continuously throughout the show production pipeline and as part of the release strategy when updates to the software or hardware are made. Additionally, this article summarizes safety features that ensure that the risk of human injury and structural damage are minimized.
-
-For a less technical explanation of Verge's commitment to safety please read the article [here](https://verge.aero/safety).
 
 ### Verge Aero Drone Show System Components
 
