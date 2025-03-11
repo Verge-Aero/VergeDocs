@@ -2,8 +2,6 @@
 
 The X1 drone has the capability to comfortably lift 500g with an upper maximum of 700g of additional payload. Depending on the type and size of payload, the X1 is able to support 6 independently-addressible pyro cues.
 
-<figure><img src="../../.gitbook/assets/ezgif-3903ca56ee98c7.gif" alt=""><figcaption></figcaption></figure>
-
 ## The X1 Pyro Module
 
 Verge Aero has developed a custom pyro module that integrates directly with its drone show platform. Coming in at a mere 70 grams, it provides an affordable, lighter-weight alternative to 3rd-party firing systems that unneccesarily include their own power source, radio module, packaging, and independent control software. The goal of the X1 pyro module is to minimize weight, and maximize safety.
