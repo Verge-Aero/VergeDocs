@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Pyro Drone System Design
 
 ## The Safety Benefits of an Integrated System
