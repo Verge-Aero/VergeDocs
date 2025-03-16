@@ -67,6 +67,7 @@
 * [Safety](drone-show-technology/safety.md)
   * [Dispelling Myths](drone-show-technology/safety/dispelling-myths.md)
   * [Comparisons To Third-Party Systems](drone-show-technology/safety/comparisons-to-third-party-systems.md)
+  * [Pyro Drone System Design](drone-show-technology/safety/pyro-drone-system-design.md)
 * [Networking](drone-show-technology/networking.md)
   * [802.15.4](drone-show-technology/networking/802.15.4.md)
 * [Autopilot](drone-show-technology/autopilot/README.md)
