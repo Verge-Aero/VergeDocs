@@ -10,7 +10,7 @@ Anybody who has seen a drone light show and a fireworks show can pick out the di
 
 ### Design and Execution Complexity
 
-Although it may seem counter-intuitive given how long they've been around, designing and executing a fireworks show is generally more complex than a drone show. There are countless combination of colors, shapes, and sizes of pyro products. Designing a fireworks show means needing a deep understanding of available effects and understanding how and when to use them. The end result is dozens of different types of products that must be placed in specific locations, must be wired to firing modules, and must be carefully organized so that the correct effect fires when commanded. A drone, by comparison, simply represents a single light in the sky. Every drone is the same, can be placed at any location in a launchpad, and returns to their exact location at the end of a show. Drones are essentially pixels that can be moved in any direction and set to any color tens of times per second. Designing a drone show is a matter of choosing positions and colors of the drones to create patterns and shapes in the sky. Verge Aero's [Design Studio](../drone-show-software/publish-your-docs/) makes this almost trivial and allows artists to focus on creating a story and iterating on incredible lighting effects.
+Although it may seem counter-intuitive given how long they've been around, designing and executing a fireworks show is generally more complex than a drone show. There are countless combination of colors, shapes, and sizes of pyro products. Designing a fireworks show means needing a deep understanding of available effects and understanding how and when to use them. The end result is dozens of different types of products that must be placed in specific locations, must be wired to firing modules, and must be carefully organized so that the correct effect fires when commanded. A drone, by comparison, simply represents a single light in the sky. Every drone is the same, can be placed at any location in a launchpad, and returns to their exact location at the end of a show. Drones are essentially pixels that can be moved in any direction and set to any color tens of times per second. Designing a drone show is a matter of choosing positions and colors of the drones to create patterns and shapes in the sky. Verge Aero's [Design Studio](../drone-show-software/verge-design-studio/) makes this almost trivial and allows artists to focus on creating a story and iterating on incredible lighting effects.
 
 ### Stochasticity
 
@@ -78,7 +78,7 @@ Every cue has a continuity check that validates that an e-match is connected. Th
 
 ### Our Design Tools
 
-Designing shows, whether using a pyro module or not, is greatly simplified by using the Verge [Design Studio](../drone-show-software/publish-your-docs/).
+Designing shows, whether using a pyro module or not, is greatly simplified by using the Verge [Design Studio](../drone-show-software/verge-design-studio/).
 
 #### Synchronizing Drone Show and Pyro
 

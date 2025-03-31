@@ -1,6 +1,6 @@
 # Safety
 
-**In light of recent events in the drone show world, industry concern for system safety is at an all time high. Click [here](https://verge.aero/safety) to learn about Verge Aero's safefy advantage.**
+**In light of recent events in the drone show world, industry concern for system safety is at an all time high. Click** [**here**](https://verge.aero/safety) **to learn about Verge Aero's safefy advantage.**
 
 Verge Aero's system seeks to minimize human error and risk by maximizing automation and restricting user freedom to the core functionality required for performing a drone show. By design, the system leans toward over-sensitivity to error states and seeks to reject operation at the earliest state possible. Rejection states can occur at multiple points in the pipeline: at design-time, during pre-flight, at mission execution, and during a mission.
 
@@ -12,7 +12,7 @@ This article provides an overview of the validation process that occurs continuo
 
 Verge Aero’s drone show system software stack consists of the following elements:
 
-* Verge Aero's [Design Studio](../drone-show-software/publish-your-docs/)
+* Verge Aero's [Design Studio](../drone-show-software/verge-design-studio/)
   * A desktop application with an easy-to-use interface
   * Used to design, validate, and generate drone show missions
 * Verge Aero's Web Portal

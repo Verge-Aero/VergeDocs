@@ -38,13 +38,13 @@ A single ribbon cable provides an interface between the hivemind control board a
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>The mesh ribbon cable providing power and data connections to the X1 companion computer</p></figcaption></figure>
 
-## [Design Studio](../../drone-show-software/publish-your-docs/) Integration
+## [Design Studio](../../drone-show-software/verge-design-studio/) Integration
 
 The design studio provides all necessary tools to plan, visualize, and validate drone shows with integrated pyro. When using the X1 pyro module, triggers programmed into the show via the studio are automatically fired as part of the same show file that is in use today. This completely eliminates the need for third-party hardware and software.
 
 ### Product Configuration
 
-Each pyro product can be configured independently to define its VDL (Finale3D), mounting direction, and more. All of these fields are exported as part of the [VVIZ ](../../drone-show-software/publish-your-docs/vviz-format.md)format which is supported by third-party software such as [Finale3D](../../drone-show-software/publish-your-docs/advanced-topics/designing-with-pyro.md#finale3d-support).
+Each pyro product can be configured independently to define its VDL (Finale3D), mounting direction, and more. All of these fields are exported as part of the [VVIZ ](../../drone-show-software/verge-design-studio/vviz-format.md)format which is supported by third-party software such as [Finale3D](../../drone-show-software/verge-design-studio/advanced-topics/designing-with-pyro.md#finale3d-support).
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Examples of some products defined for a series of drones</p></figcaption></figure>
 
@@ -60,7 +60,7 @@ The Design Studio is capable of showing realistic previews of pyro drones at any
 
 <figure><img src="../../.gitbook/assets/Waterfall_Test_2023-10-19_01-08-18.gif" alt=""><figcaption><p>A waterfall effect visualized in the design studio</p></figcaption></figure>
 
-### [Yaw Control](../../drone-show-software/publish-your-docs/advanced-topics/yaw-control.md)
+### [Yaw Control](../../drone-show-software/verge-design-studio/advanced-topics/yaw-control.md)
 
 Along with position, the design studio allows drones to be turned to face a specific direction. This can be changed dynamically throughout the show depending on the shape that the drones are traveling on. The simplest example of this, along with trigger control, can be seen below, with a circle that fires comets outward by yawing the drones and firing them in order of the circle.
 

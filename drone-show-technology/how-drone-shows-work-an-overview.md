@@ -28,7 +28,7 @@ The drone is constantly attempting to hit a moving target: the location where th
 
 ## Design Studio - The Master Choreographer
 
-Now that we understand how a single drone can play back a show plan, how do we even generate all of them to begin with? Enter Verge Aero's [Design Studio](../drone-show-software/publish-your-docs/). Designing a drone show using our software does not require writing a single line of code. In fact, most drone show designers come from an animation or art background. Drone show design is a deep topic on its own, so we'll keep the details to a minimum and focus on the main topics.
+Now that we understand how a single drone can play back a show plan, how do we even generate all of them to begin with? Enter Verge Aero's [Design Studio](../drone-show-software/verge-design-studio/). Designing a drone show using our software does not require writing a single line of code. In fact, most drone show designers come from an animation or art background. Drone show design is a deep topic on its own, so we'll keep the details to a minimum and focus on the main topics.
 
 ### Where in the World?
 
@@ -50,7 +50,7 @@ Launch and land sequences are entirely automated. They're each represented as a 
 
 ### Shapes - Designing Drone Formations
 
-The [Design Studio](../drone-show-software/publish-your-docs/) allows a designer to import a large number of formats to extract drone formations from. These formats include SVG files, 3D models, images, and more. Rather than individually placing the position of drones, various algorithms can take shapes and automatically place drones to evenly distribute them across the shape. A very simple example can be seen below with a "Fill Circle" primitive. One circle has been allocated 100 drones and the other has been allocated 500. Without needing to create two separate shapes, the software automatically distributes drones on the shape to support the desired number of drones. It can even automatically make the shapes smaller or larger to make sure that the drones are not too close together.
+The [Design Studio](../drone-show-software/verge-design-studio/) allows a designer to import a large number of formats to extract drone formations from. These formats include SVG files, 3D models, images, and more. Rather than individually placing the position of drones, various algorithms can take shapes and automatically place drones to evenly distribute them across the shape. A very simple example can be seen below with a "Fill Circle" primitive. One circle has been allocated 100 drones and the other has been allocated 500. Without needing to create two separate shapes, the software automatically distributes drones on the shape to support the desired number of drones. It can even automatically make the shapes smaller or larger to make sure that the drones are not too close together.
 
 <figure><img src="../.gitbook/assets/CircleFormationComparison.png" alt=""><figcaption><p>Two versions of a circle formation. The left contains 100 drones and the right contains 500</p></figcaption></figure>
 
@@ -58,7 +58,7 @@ Below is an imported SVG of an emoji with heart eyes. Without modifying the shap
 
 <figure><img src="../.gitbook/assets/SVG_Emoji_Comparison.png" alt=""><figcaption><p>The imported SVG of a heart eyes emoji on the left, 100 drones allocated to the emoji in the middle, and 200 drones allocated to the emoji on the right.</p></figcaption></figure>
 
-Formations can be far more complex, with dynamic animations, 3D effects, lighting effects, and much more. Drones can also be split up into groups and execute formations independently. To explore this topic more, feel free to explore the many other topics in the [Design Studio](../drone-show-software/publish-your-docs/) section of our documentation.
+Formations can be far more complex, with dynamic animations, 3D effects, lighting effects, and much more. Drones can also be split up into groups and execute formations independently. To explore this topic more, feel free to explore the many other topics in the [Design Studio](../drone-show-software/verge-design-studio/) section of our documentation.
 
 ### Transitions
 
