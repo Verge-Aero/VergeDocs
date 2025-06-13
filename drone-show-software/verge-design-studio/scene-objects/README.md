@@ -23,11 +23,11 @@ Shapes that have depth along with height and width. Simple primitives that can b
 * Sphere
 * Scatter Field
 
-### Splines
+### [Splines](spline/)
 
 Splines are a continuous set of linear curves that can be manipulated via anchor points to generate complex shapes. Bezier curves are used extensively in SVG files. A number of primitive shapes built out of bezier splines can be created from the scene object menu. Converting those shapes into a Bezier spline exposes full manipulation.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption><p>A Bezier Helix with editable anchor points</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption><p>A Bezier Helix with editable anchor points</p></figcaption></figure>
 
 * Bezier Curve
 * Bezier Line

@@ -18,4 +18,4 @@ When drones are added or removed from the merger, it will automatically take the
 * Track the launchpad merger with a launchpad to join the group
 * Track another object to then transition the launchpad to a different shape
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>An example of the timeline for two launchpads tracking a launchpad merger (as seen in the animation above)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>An example of the timeline for two launchpads tracking a launchpad merger (as seen in the animation above)</p></figcaption></figure>

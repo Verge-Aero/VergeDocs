@@ -20,8 +20,8 @@ The Design Studio currently supports exporting the following data to the Depence
 
 To export a Depence Drone Show file, simply ensure that your show has been saved at least once, then navigate to and click File>Export>Depence Drone Show File.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 You can then choose a quality level, where higher levels are more accurate, but create a larger file size.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>

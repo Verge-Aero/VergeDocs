@@ -4,4 +4,4 @@ Once you have an approved flight authorization, creating a Show will allow you t
 
 To create a show, use the "Create New Show" button from the "Shows" tab within your organization. Once created, you can upload a .packedshow file via the "Upload Show File" button. This page will give you live progress updates on your show's rendering. Once complete, use the "Download" icon under "Render Files" to download your show's vbake
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>

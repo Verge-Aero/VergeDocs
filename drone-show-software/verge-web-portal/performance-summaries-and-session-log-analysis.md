@@ -6,4 +6,4 @@ To view session logs after they've been uploaded, enter your organization via th
 
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Session Log Analysis tab</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Performance Analysis of a drone's flight</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption><p>Performance Analysis of a drone's flight</p></figcaption></figure>

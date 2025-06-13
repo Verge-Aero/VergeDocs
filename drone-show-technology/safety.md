@@ -49,7 +49,7 @@ Any show designed within the design studio is subject to a set of automatic test
 
 Any test failure rejects export. The user may not generate a flyable mission file until the tests pass.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Shows the simulation and rendering pipeline for drone shows created in the Verge Design Studio</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Shows the simulation and rendering pipeline for drone shows created in the Verge Design Studio</p></figcaption></figure>
 
 ### Verge Aero Cloud Services Validation
 

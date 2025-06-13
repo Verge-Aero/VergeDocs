@@ -8,7 +8,7 @@ The Design Studio provides support for multiple third-part applications. Verge A
 
 ## [Syncronorm: Depence](syncronorm-depence.md)
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## [FWSim](https://www.fwsim.com/doc/en/drone_shows.html)
 
