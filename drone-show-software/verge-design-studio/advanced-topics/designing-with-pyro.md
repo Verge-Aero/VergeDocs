@@ -61,6 +61,8 @@ The following products are supported for pyro-mounted pre-viz natively:
 
 More products will be added in the future, however pyro pre-viz/design applications that support the [VVIZ ](../vviz-format.md)format such as Finale3D or FWsim are capable of visualizing practically any drone-mountable product.
 
+{% embed url="https://scribehow.com/shared/Pyro_Previz__PLsQT2FxSwaDplVQXMz-WQ" %}
+
 ## Pointing Pyro
 
 Pyro mounts will obey drone [yaw control](yaw-control.md) and display guiding arrows to provide feedback during the design process. Ultimately, the only thing the designer needs to be concerned with is that the arrow (and subsequent previz) points in the direction they expect. A simple example of this is in the case that a comet is mounted out of the back of a drone. When configuring a payload target event, the drone must be rotated an additional 180 degrees to point the product as though it were facing out of the front of a drone. Product pointing up or down can not be rotated. Yaw can also be updated on a per-frame basis and create complex sequences.
