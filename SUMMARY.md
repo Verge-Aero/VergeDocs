@@ -61,7 +61,12 @@
   * [X1](drone-show-hardware/drones/x1.md)
   * [X7](drone-show-hardware/drones/x7.md)
 * [Payloads](drone-show-hardware/payloads/README.md)
-  * [X1 Pyro Module](drone-show-hardware/payloads/x1-pyro-module.md)
+  * [X1 Pyro Module](drone-show-hardware/payloads/x1-pyro-module/README.md)
+    * [Drone Pyro Products](drone-show-hardware/payloads/x1-pyro-module/drone-pyro-products/README.md)
+      * [Smoke](drone-show-hardware/payloads/x1-pyro-module/drone-pyro-products/smoke.md)
+      * [Comets](drone-show-hardware/payloads/x1-pyro-module/drone-pyro-products/comets.md)
+      * [Mines](drone-show-hardware/payloads/x1-pyro-module/drone-pyro-products/mines.md)
+      * [Other](drone-show-hardware/payloads/x1-pyro-module/drone-pyro-products/other.md)
 
 ## Drone Show Technology
 

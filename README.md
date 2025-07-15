@@ -1,20 +1,6 @@
 ---
 cover: .gitbook/assets/427517384_10228940381227953_1025059523046844678_n.jpg
 coverY: 52.655995659251225
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Verge Aero - Drone Show Technology
@@ -34,4 +20,4 @@ Since its founding in 2016, Verge Aero grew from working out of livings rooms, b
 
 ### Learn About the Software
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Verge App Toolbox</strong></td><td>Access the Verge Software Suite</td><td><a href=".gitbook/assets/image (6) (1).png">image (6) (1).png</a></td><td></td><td><a href="drone-show-software/quickstart/">quickstart</a></td></tr><tr><td><strong>Verge Design Studio</strong></td><td>Design drone shows</td><td><a href=".gitbook/assets/Screenshot 2023-06-13 122427.png">Screenshot 2023-06-13 122427.png</a></td><td></td><td><a href="drone-show-software/verge-design-studio/">verge-design-studio</a></td></tr><tr><td><strong>Verge Console</strong></td><td>Fly drone shows</td><td><a href=".gitbook/assets/Screenshot 2024-08-27 124634.png">Screenshot 2024-08-27 124634.png</a></td><td></td><td><a href="drone-show-software/verge-console/">verge-console</a></td></tr><tr><td><strong>Verge Web Portal</strong></td><td>Manage your organization &#x26; fleet</td><td><a href=".gitbook/assets/image (24).png">image (24).png</a></td><td></td><td><a href="drone-show-software/verge-web-portal/">verge-web-portal</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Verge App Toolbox</strong></td><td>Access the Verge Software Suite</td><td><a href=".gitbook/assets/image (6) (1) (1).png">image (6) (1) (1).png</a></td><td></td><td><a href="drone-show-software/quickstart/">quickstart</a></td></tr><tr><td><strong>Verge Design Studio</strong></td><td>Design drone shows</td><td><a href=".gitbook/assets/Screenshot 2023-06-13 122427.png">Screenshot 2023-06-13 122427.png</a></td><td></td><td><a href="drone-show-software/verge-design-studio/">verge-design-studio</a></td></tr><tr><td><strong>Verge Console</strong></td><td>Fly drone shows</td><td><a href=".gitbook/assets/Screenshot 2024-08-27 124634.png">Screenshot 2024-08-27 124634.png</a></td><td></td><td><a href="drone-show-software/verge-console/">verge-console</a></td></tr><tr><td><strong>Verge Web Portal</strong></td><td>Manage your organization &#x26; fleet</td><td><a href=".gitbook/assets/image (24).png">image (24).png</a></td><td></td><td><a href="drone-show-software/verge-web-portal/">verge-web-portal</a></td></tr></tbody></table>
