@@ -6,4 +6,8 @@ hidden: true
 
 ## [Smoke Products](smoke.md)
 
-##
+## [Comet Products](comets.md)
+
+## [Mine Products](mines.md)
+
+## [Other Products](other.md)
