@@ -1,6 +1,5 @@
 ---
 if: visitor.claims.isLoggedIn === true
-hidden: true
 noIndex: true
 ---
 
