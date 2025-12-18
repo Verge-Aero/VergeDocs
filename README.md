@@ -13,7 +13,7 @@ By developing the best technology that’s easy to use, our goal is to create an
 
 ### Story
 
-Since its founding in 2016, Verge Aero grew from working out of livings rooms, basements, and a garage, to become the leading technology provider for drone shows. Now based out of Austin, Texas and with a global presence, Verge Aero has been featured on events ranging from , to America’s Got Talent: Extreme, to Macy’s 4th of July celebration in NYC.
+Since its founding in 2016, Verge Aero grew from working out of livings rooms, basements, and a garage, to become the leading technology provider for drone shows. Now based out of Austin, Texas and with a global presence, Verge Aero has been featured on events ranging from America’s Got Talent: Extreme, to Macy’s 4th of July celebration in NYC.
 
 * [About Us](https://www.verge.aero/about)
 * [Team Verge](https://wiki.droneshow.software/wiki/Team_Verge)
